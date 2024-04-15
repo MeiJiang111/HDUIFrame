@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GameUpdate : MonoSingleton<GameUpdate>
 {
@@ -68,7 +69,7 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         }
 #endif
         ResourceManager.Instance.AddressableErrorEvent += OnAddressableErrored;
-        updateCoroution = StartCoroutine(StartGameUpdateImple());
+        //updateCoroution = StartCoroutine(StartGameUpdateImple());
     }
 
     void UpdateFinished()
@@ -76,4 +77,9 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         //StartCoroutine(GameInitialize.Instance.EnterGame());
     }
 
+    private void OnAddressableErrored(AsyncOperationHandle arg1, Exception arg2)
+    {
+        _lastName = arg1.DebugName;
+        _lastErr = arg2.ToString();
+    }
 }
