@@ -73,7 +73,7 @@ public class GameUpdate : MonoSingleton<GameUpdate>
 
     void UpdateFinished()
     {
-        StartCoroutine(GameInitialize.Instance.EnterGame());
+        //StartCoroutine(GameInitialize.Instance.EnterGame());
     }
 
 }
