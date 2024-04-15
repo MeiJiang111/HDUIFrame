@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class GameInitialize : MonoSingleton<GameInitialize>
 {
     [Serializable]
@@ -19,9 +20,11 @@ public class GameInitialize : MonoSingleton<GameInitialize>
 
     [Header("开启更新")] 
     public bool update;
-    public List<LoadPrefabConfig> prefabList;
-    public event Action GameInitEvent;
+    public List<LoadPrefabConfig> firstLaodPrefabs;
+    public List<LoadPrefabConfig> secondLoadPrefabs;
+    public List<LoadPrefabConfig> otherLoadPrefabs;
 
+    public event Action GameInitEvent;
     bool _gameInit;
 
     protected override void Awake()
@@ -43,9 +46,40 @@ public class GameInitialize : MonoSingleton<GameInitialize>
         GameUpdate.Instance.StartGameUpdate(update);
     }
 
-   
     void Update()
     {
         
+    }
+
+    public IEnumerator EnterGame()
+    {
+        var resourMgr = ResourceManager.Instance;
+        int count = 0;
+        count = firstLaodPrefabs.Count;
+
+        foreach (var item in firstLaodPrefabs)
+        {
+            resourMgr.CreatInstanceAsync(item.name, (obj, parma) =>
+            {
+                obj.name = item.name;
+                obj.transform.localPosition = item.pos;
+                count--;
+            });
+        }
+
+        while (count > 0)
+        {
+            yield return null;
+        }
+
+        //UIManager.Instance.RegisterListener();
+        //CameraController.Instance.RegisterListenner();
+
+        //加载系统配置 todo
+    }
+
+    void OnGameInit()
+    {
+        _gameInit = true;
     }
 }

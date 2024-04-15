@@ -14,6 +14,7 @@ public class ResourceManager : MonoSingleton<ResourceManager>
     protected override void Awake()
     {
         base.Awake();
+
         dic = new Dictionary<string, AsyncOperationHandle>();
         UnityEngine.ResourceManagement.ResourceManager.ExceptionHandler += AddressablesException;
     }
