@@ -18,12 +18,17 @@ MonoBehaviour:
   m_GUID: bf298a0a4d492e64fa6fdd41d47e3eef
   m_SerializeEntries:
   - m_GUID: 93d5acd5d9d77ff4c962dfcce4e6bad5
-    m_Address: Assets/ResResources/Animator/Effect/AnimControl_Tangs Fish.controller
+    m_Address: AnimControl_Tangs Fish
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4b3846be4ea789a4b87d394cb2f82676
-    m_Address: Assets/ResResources/Animator/Character/Male1.controller
+    m_Address: Male1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 262a73e097830e843b658706632de995
+    m_Address: CM-StateDriven
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

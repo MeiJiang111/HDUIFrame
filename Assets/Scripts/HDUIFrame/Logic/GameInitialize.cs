@@ -21,9 +21,7 @@ public class GameInitialize : MonoSingleton<GameInitialize>
     [Header("¿ªÆô¸üÐÂ")] 
     public bool update;
     public List<LoadPrefabConfig> firstLaodPrefabs;
-    public List<LoadPrefabConfig> secondLoadPrefabs;
-    public List<LoadPrefabConfig> otherLoadPrefabs;
-
+   
     public event Action GameInitEvent;
     bool _gameInit;
 
