@@ -32,4 +32,41 @@ public class UIFrame : MonoBehaviour
     /// </summary>
     public static Camera Camera { get; private set; }
 
+    /// <summary>
+    /// 当加载UI超过这个时间（单位：秒）时，检测为卡住
+    /// </summary>
+    public static float StuckTime = 1;
+
+    /// <summary>
+    /// 当前显示的Panel
+    /// </summary>
+    public static UIBase CurrentPanel
+    {
+        get
+        {
+            if (panelStack.Count <= 0) 
+            {
+                return null;
+            }
+
+            if (panelStack.Peek().type == null)
+            {
+                return null;
+            }
+          
+            if (instances.TryGetValue(panelStack.Peek().type, out var instance))
+            {
+                return instance.GetComponent<UIBase>();
+            }
+            return null;
+        }
+    }
+
+    private void Awake()
+    {
+        if(canvas == null)
+        {
+            throw new Exception("UIFrame初始化失败，请设置Canvas");
+        }
+    }
 }
