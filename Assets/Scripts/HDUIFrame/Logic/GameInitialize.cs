@@ -72,8 +72,6 @@ public class GameInitialize : MonoSingleton<GameInitialize>
 
         //UIManager.Instance.RegisterListener();
         //CameraController.Instance.RegisterListenner();
-
-        //º”‘ÿœµÕ≥≈‰÷√ todo
     }
 
     void OnGameInit()

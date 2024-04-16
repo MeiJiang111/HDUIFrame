@@ -529,8 +529,6 @@ MonoBehaviour:
   ShowDebugGrid: 0
   update: 1
   firstLaodPrefabs: []
-  secondLoadPrefabs: []
-  otherLoadPrefabs: []
 --- !u!114 &1380327777
 MonoBehaviour:
   m_ObjectHideFlags: 0
