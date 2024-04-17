@@ -7,7 +7,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(RectTransform))]
 [DisallowMultipleComponent]
-public class UIFrame : MonoBehaviour
+public class UIFrame : MonoSingleton<UIFrame>
 {
     private static readonly Dictionary<Type, GameObject> instances = new Dictionary<Type, GameObject>();
     private static readonly Stack<(Type type, UIData data)> panelStack = new Stack<(Type, UIData)>();
@@ -62,11 +62,32 @@ public class UIFrame : MonoBehaviour
         }
     }
 
-    private void Awake()
+    protected override void Awake()
     {
-        if(canvas == null)
+        base.Awake();
+
+        if (canvas == null)
         {
             throw new Exception("UIFrame初始化失败，请设置Canvas");
         }
+
+        if(canvas.worldCamera == null)
+        {
+            throw new Exception("UIFrame初始化失败，请给Canvas设置worldCamera");
+        }
+
+        if (layers == null)
+        {
+            throw new Exception("UIFrame初始化失败，请设置layers");
+        }
+
+        Canvas = canvas;
+        Camera = canvas.worldCamera;
+
+        layerTransform = layers;
+        layerTransform.anchoredPosition = Vector2.zero;
+        layerTransform.localScale = Vector2.one;
+        layerTransform.localRotation = Quaternion.identity;
+
     }
 }
