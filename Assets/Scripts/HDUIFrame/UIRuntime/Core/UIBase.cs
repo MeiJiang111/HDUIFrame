@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 
 
@@ -25,26 +25,26 @@ public abstract class UIBase : MonoBehaviour
     /// </summary>
     public List<UIBase> Children = new List<UIBase>();
 
-    protected internal Task InnerOnCreate() => OnCreate();
-    protected internal Task InnerOnRefresh() => OnRefresh();
+    protected internal UniTask InnerOnCreate() => OnCreate();
+    protected internal UniTask InnerOnRefresh() => OnRefresh();
     protected internal void InnerOnBind() => OnBind();
     protected internal void InnerOnUnbind() => OnUnbind();
     protected internal void InnerOnShow() => OnShow();
     protected internal void InnerOnHide() => OnHide();
     protected internal void InnerOnDied() => OnDied();
 
-    //private HashSet<UITimer> timers = new HashSet<UITimer>();
+    private HashSet<UITimer> timers = new HashSet<UITimer>();
 
 
     /// <summary>
     /// 创建时调用，生命周期内只执行一次
     /// </summary>
-    protected virtual Task OnCreate() => Task.CompletedTask;
+    protected virtual UniTask OnCreate() => UniTask.CompletedTask;
 
     /// <summary>
     /// 刷新时调用
     /// </summary>
-    protected virtual Task OnRefresh() => Task.CompletedTask;
+    protected virtual UniTask OnRefresh() => UniTask.CompletedTask;
 
     /// <summary>
     /// 绑定事件
@@ -77,23 +77,23 @@ public abstract class UIBase : MonoBehaviour
     /// <param name="delay">延迟多少秒后执行callback</param>
     /// <param name="callback">延迟执行的方法</param>
     /// <param name="isLoop">是否是循环定时器</param>
-    //protected UITimer CreateTimer(float delay, Action callback, bool isLoop = false)
-    //{
-    //    var timer = UIFrame.CreateTimer(delay, callback, isLoop);
-    //    timers.Add(timer);
-    //    return timer;
-    //}
+    protected UITimer CreateTimer(float delay, Action callback, bool isLoop = false)
+    {
+        var timer = UIFrame.CreateTimer(delay, callback, isLoop);
+        timers.Add(timer);
+        return timer;
+    }
 
     /// <summary>
     /// 取消所有定时器
     /// </summary>
-    //public void CancelAllTimer()
-    //{
-    //    foreach (var item in timers)
-    //    {
-    //        item.Cancel();
-    //    }
-    //    timers.Clear();
-    //}
+    public void CancelAllTimer()
+    {
+        foreach (var item in timers)
+        {
+            item.Cancel();
+        }
+        timers.Clear();
+    }
 
 }
