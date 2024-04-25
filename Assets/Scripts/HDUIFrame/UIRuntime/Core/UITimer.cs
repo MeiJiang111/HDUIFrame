@@ -5,7 +5,6 @@ using UnityEngine;
 using System.Collections.Generic;
 
 
-
 public class UITimer
 {
     private float progress = 0;

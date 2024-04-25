@@ -1,7 +1,6 @@
 using System;
 
 
-
 [AttributeUsage(AttributeTargets.Class)]
 public abstract class UILayer : Attribute, IComparable<UILayer>
 {
