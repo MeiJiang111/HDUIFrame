@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
+
+
 public class GameUpdate : MonoSingleton<GameUpdate>
 {
     public enum UpdateState
@@ -64,15 +66,6 @@ public class GameUpdate : MonoSingleton<GameUpdate>
 
     public void StartGameUpdate(bool update = true)
     {
-//#if UNITY_EDITOR
-//        if (!update)
-//        {
-//            CurrState = UpdateState.Finish;
-//            //编辑器下可以跳过更新
-//            UpdateFinished();
-//            return;
-//        }
-//#endif
         ResourceManager.Instance.AddressableErrorEvent += OnAddressableErrored;
         updateCoroution = StartCoroutine(StartGameUpdateImple());
     }
@@ -118,6 +111,7 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         yield return new WaitForEndOfFrame();
 
         updateCatalogs = handler.Result;
+        Debug.Log("ddd -- updateCatalogs.count == " + updateCatalogs.Count);
         Addressables.Release(handler);
         if (updateCatalogs.Count > 0)
         {
@@ -133,6 +127,7 @@ public class GameUpdate : MonoSingleton<GameUpdate>
 
     IEnumerator StartDownload()
     {
+        Debug.Log("ddd -- StartDownload");
         var updateHandler = Addressables.UpdateCatalogs(updateCatalogs, false);
         yield return updateHandler;
 

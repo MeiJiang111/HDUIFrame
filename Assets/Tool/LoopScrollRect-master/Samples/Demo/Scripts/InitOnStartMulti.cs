@@ -78,6 +78,8 @@ namespace Demo
             {
                 // Cell MulitiPrefab, Get Cell Preferred Type by custom data
                 int CellTypeIndex = m_LoopListBank.GetCellPreferredTypeIndex(index);
+                //Debug.Log($"ddd -- index == {index}   CellTypeIndex == {CellTypeIndex}  m_ItemList.Count == {m_ItemList.Count} ");
+               
                 if (m_ItemList.Count <= CellTypeIndex)
                 {
                     Debug.LogWarningFormat("TempPrefab is null! CellTypeIndex: {0}", CellTypeIndex);

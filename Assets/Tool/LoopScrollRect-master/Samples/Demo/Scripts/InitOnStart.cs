@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System;
 
 namespace Demo
 {
@@ -26,6 +27,7 @@ namespace Demo
 
         public void ReturnObject(Transform trans)
         {
+            
             // Use `DestroyImmediate` here if you don't need Pool
             trans.SendMessage("ScrollCellReturn", SendMessageOptions.DontRequireReceiver);
             trans.gameObject.SetActive(false);
