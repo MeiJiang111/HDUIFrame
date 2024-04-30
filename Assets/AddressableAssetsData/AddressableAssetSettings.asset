@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 623b943d815e9d845945e186dbf2443f
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: 1efabd529742dc8d945caddfd1188e4c
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -163,6 +163,7 @@ MonoBehaviour:
     - OtherUI_Sprite_Component_Slider_Slider_Demo_Common
     - OtherUI_Sprite_Component_Slider_Slider_Demo_Dark
     - OtherUI_Sprite_Component_Slider_Slider_Demo_Light
+    - GameUpdate
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 77ccf87e4f68e44468379030e2ccb2be, type: 2}

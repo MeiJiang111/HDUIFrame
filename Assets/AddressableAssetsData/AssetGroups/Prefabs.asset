@@ -107,12 +107,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Prefabs_UI_Main
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 27b665df725fd724a8a21922ae5221df
-    m_Address: UpdatePanel
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefabs_UI_Update
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 361e1180ccedd0b4caefbc42ce7a2430
     m_Address: MainPanel
     m_ReadOnly: 0

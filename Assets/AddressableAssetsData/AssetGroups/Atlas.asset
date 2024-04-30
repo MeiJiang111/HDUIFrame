@@ -209,18 +209,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Atlas_Fishery
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c417b9a7c4933664a9c4e2463b613ccb
-    m_Address: bg1
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Atlas_GameUpdate
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 41f6edbb1c98b4a4a9e4600dcb5767c0
-    m_Address: white
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Atlas_GameUpdate
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d206a42029519ba4ca8d5f9ceb78dad9
     m_Address: Btn_MenuButton_Rectangle00_n
     m_ReadOnly: 0
