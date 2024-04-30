@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Prefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: Prefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1b271bb5c534d0d49b4dfc9d8998cfcc
+  m_SerializeEntries:
+  - m_GUID: 70e821862659acb4cbb8980a90f3b931
+    m_Address: UIFrame
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e171dc4d95a5d94791e4a31402a25c3
+    m_Address: LoginBluePrint
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_BluePrint
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d93d93d01bbd7446a313a9e71cc4105
+    m_Address: MainBluePrint
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_BluePrint
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 425307bb9cf77b44f92648f3eae18e5c
+    m_Address: GameManager
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_Global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fe3823ea5a2f964d821802549aabf96
+    m_Address: LoginInitialize
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_Global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1a5dbd58d638f640908d4b36ac201be
+    m_Address: MainCamera
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_Global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa6d043c915786844bd08e81906794d8
+    m_Address: LoadingPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ce9a218a1f35c64a83ce31a3816b84b
+    m_Address: SutckPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fdde0a71d2fbd9447ac409c7cbea425b
+    m_Address: LoginPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Login
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 682151a88f9de89468ced7b2450ae56c
+    m_Address: InventoryItem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75990795ed6ab4d44a17789cf617d043
+    m_Address: InventoryPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 243f8e2ea02f1a04c90c6d7639d2d1c5
+    m_Address: MainPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56f870209a2ef1441ba7dac792816f02
+    m_Address: RedDotItem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a53bf15bbe8c17d4592df290dbd9dd02
+    m_Address: ShopGoods
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2347971d6fd2db4bbc69b581e36e9d6
+    m_Address: ShopTipsPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27b665df725fd724a8a21922ae5221df
+    m_Address: UpdatePanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Update
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 361e1180ccedd0b4caefbc42ce7a2430
+    m_Address: MainPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 341cca7e74e2d5a46bbcf5fccf5fc207
+    m_Address: ShopPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main_Shop
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5349bd6ad80668e42bef21ab28ba18a3
+    m_Address: btn_item
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main_Test
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8962c25a58367a4fbcdf23e65ede53d
+    m_Address: RoundUi
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main_Test
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64dd65d2d1a24cf4dad1bc029eba086b
+    m_Address: Test1Panel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Prefabs_UI_Main_Test
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c427152164d2196479c4957b7fecfeb9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 83f7e58e8c6d95f49b6a2e6feb298cf8, type: 2}
+    - {fileID: 11400000, guid: 39bcec9190061d5468398b0f330b02da, type: 2}

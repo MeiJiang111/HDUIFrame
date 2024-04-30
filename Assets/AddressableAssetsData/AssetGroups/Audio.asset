@@ -16,7 +16,19 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 6cfcccc577b2ebb40b2649ea3be7a159
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 6e25833643248d54e90520157bf5e9ed
+    m_Address: Cleopatra
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio_BG
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ddf9cb3a6482dbb4ab0f8396c67a4e50
+    m_Address: Black
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio_Sound
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c427152164d2196479c4957b7fecfeb9, type: 2}
   m_SchemaSet:

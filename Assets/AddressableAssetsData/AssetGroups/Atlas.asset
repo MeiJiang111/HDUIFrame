@@ -16,7 +16,1741 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 1b1373b2873aadd46a975f76fb10476e
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: bf0394f7b802ae24b9e5ed45642b1d6d
+    m_Address: bg1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BackGround
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c31eaa4cdad24241bd6748a8c8eb59a
+    m_Address: bg2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BackGround
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c32ca4fe8f8c6047bdcbd4d75689cdc
+    m_Address: pic_mining_game_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BackGround
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8a210026a7022d46b536f8f78088eee
+    m_Address: build_ico_bank
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BuildIco
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8e2859cdff578049921935d91106e13
+    m_Address: build_ico_farm
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BuildIco
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fc8d21bbce2b8c4b8ee6a204f9976e4
+    m_Address: build_ico_granary
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BuildIco
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52863720097f08348a34cf59fb952934
+    m_Address: build_ico_house
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BuildIco
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9af5d0beb2e7b4f41be8c80ffc453824
+    m_Address: build_ico_market
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BuildIco
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 51cae49d3121f8a4196db9eefe3291f3
+    m_Address: build_ico_school
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BuildIco
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 260cea5a734f2e94a9217a5434dd573c
+    m_Address: build_ico_workshop
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_BuildIco
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 808d7bb779fc1c24aa420e4907c04626
+    m_Address: icon_blue_food
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc654595bc74f2148b04c684586aa9fe
+    m_Address: icon_orange_flag
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9679e0a9c96a96142a886c32996eec48
+    m_Address: icon_status_clock
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa3e65200d1cdb645a4282228cebde1d
+    m_Address: icon_status_coin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 517a4b14756c8934e970738d38ef8005
+    m_Address: icon_status_danger
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bec1fa4c4871d143bb0ca822113094b
+    m_Address: icon_status_flag
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ba37b801e8845144947bdb4d73c991c
+    m_Address: icon_status_flower
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e64157cd653e6547b07eef79efe0eda
+    m_Address: icon_status_food
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b1c16f36878dc6438ec3504f34b021b
+    m_Address: icon_status_hoe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43aa722545691ea42b9258e8eaa0a2d8
+    m_Address: icon_status_person
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9401d376d66d4214f85d64e87f1675af
+    m_Address: icon_status_up
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Connon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3823430201dc264d93bcb70f5dad5b2
+    m_Address: bg_ico2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Construction
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1927328364e7e0f4a9b09bad20ea6911
+    m_Address: s_bg1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Construction
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4752238db40762442a911e5aa4d37233
+    m_Address: s_btn1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Construction
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6de81c50862613a4c88a1eb13cd22b4a
+    m_Address: s_sm_ico1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Construction
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e8f9e30f88ece049878b772e3064f39
+    m_Address: btn_sm_circle_yellow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Fishery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1fff476eff7dfee469aded3f9091438c
+    m_Address: icon_fish_bucket
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Fishery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ba9a38011fa5714abfc9174b19e9459
+    m_Address: icon_rudder
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Fishery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 23b3c491346dc704b8470054aebbfa03
+    m_Address: icon_ship
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Fishery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a62ca9a6b757b2f40b70b7864dcd955a
+    m_Address: pic_blue_board_circle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Fishery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f6259d94e0b8404fab43942160d95c3
+    m_Address: pic_blue_board_line
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Fishery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99fc916397d3ff64eb27b4aac8ea12e8
+    m_Address: pic_game_ship
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Fishery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c417b9a7c4933664a9c4e2463b613ccb
+    m_Address: bg1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_GameUpdate
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41f6edbb1c98b4a4a9e4600dcb5767c0
+    m_Address: white
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_GameUpdate
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d206a42029519ba4ca8d5f9ceb78dad9
+    m_Address: Btn_MenuButton_Rectangle00_n
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7bc151cb000d054782e66b90b3f8b95
+    m_Address: Btn_MenuButton_Rectangle00_s
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efdcd5170214d5b4fb2f958cc851cfd3
+    m_Address: IconGroup_MenuIcon5_Coin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b58ab4722667f8e41a56de4222faba6e
+    m_Address: IconGroup_MenuIcon5_Gem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f6930e16b98a354489d935aed6328c2
+    m_Address: itemicon_anvil
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3089c12ea5c4a074c964d02a4dd24a8f
+    m_Address: itemicon_bag_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c656598b26bd50047bb8244381b6bef1
+    m_Address: itemicon_bag_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b4267a819dc7244ca43cf8968916deb
+    m_Address: itemicon_battery
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43bd5283653c98d488cd4a2c49613e28
+    m_Address: itemicon_battery_booster
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c88a40da3196ed145ad261fe07dcaa3d
+    m_Address: itemicon_bell
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7a16e69a162bde44bfc24897e397de3
+    m_Address: itemicon_bomb
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 770014b5a2b85734f8b1c2433c29a0b3
+    m_Address: itemicon_bomb_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38362a7d060de294fbf4932c1817d885
+    m_Address: itemicon_bone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dcf41894b4b44f0438758101ee1ad888
+    m_Address: itemicon_book_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3dd071eca94ec1d4ca37e94fdbcdce0c
+    m_Address: itemicon_book_purple
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cb3bfc4e01502b49975d038918f28b1
+    m_Address: itemicon_boss
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f68fe38c4de8574888572b471fc58fc
+    m_Address: itemicon_box
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35254750591efc74cba5b78c81cfd04f
+    m_Address: itemicon_bulb
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 176f06984afb006429fafa9092770727
+    m_Address: itemicon_bullet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15e3a176cd93a45429ab09e4301dda6c
+    m_Address: itemicon_burger
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 427609b5e010f2542a62f49a023b157d
+    m_Address: itemicon_cactus
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bda95e8c5439d734f8a3b215e9d5ba6e
+    m_Address: itemicon_calendar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8efb10be9bd0d64c8988ba414d2e391
+    m_Address: itemicon_camera_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b3b34f020bb08e44ad644120ad4c666
+    m_Address: itemicon_camera_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db4285dc8094f8a47827bde5c8b2f822
+    m_Address: itemicon_card
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef12434b5983b894489b02ff7d9e7c2b
+    m_Address: itemicon_castle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 59ce4ff11af5ea84d9815805ba6b1beb
+    m_Address: itemicon_chat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7574331a11d945045a5961ec638f23aa
+    m_Address: itemicon_chat_talk
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de6976b943317144d98ee3ec991bc5d6
+    m_Address: itemicon_chest_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82001b0bfc562a748bff189ac27d18e3
+    m_Address: itemicon_chest_blue_open
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19fe6faafa0ea0b40bae232de51a7d0b
+    m_Address: itemicon_chest_brown
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24f07777e115d3d4cb273d688ab5dc63
+    m_Address: itemicon_chest_brown_open
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 214704f23c1a38b45ba02ce35edb6e24
+    m_Address: itemicon_clover_
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8788e70492c85c94cb206517e7144f99
+    m_Address: itemicon_coin_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b813fc742959924c9ee8c338efe85d9
+    m_Address: itemicon_coin_gold_dollar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64f3113ed22ecc045b350cf3a70b4fcc
+    m_Address: itemicon_coin_gold_star
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 719a814c61391f64fb2c7c52650876b2
+    m_Address: itemicon_compass
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 731bab4b185825b4eae91981038cce8c
+    m_Address: itemicon_crown_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b300374b0857ab940a95af6a88cabd91
+    m_Address: itemicon_crown_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31239884da6b9fc4b9032ad00f0b5e02
+    m_Address: itemicon_diamond_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb05f353cb98848499575a93bbb0fd9e
+    m_Address: itemicon_diamond_purple
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f911165c25abff41a8128a51006e5f1
+    m_Address: itemicon_diamond_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b08a7cbbf4261d4495e75ad81627490
+    m_Address: itemicon_dice_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bc010df3208d864592542c03ad96aa0
+    m_Address: itemicon_dice_white
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13e2c304685580942b49d2df2cb08f3d
+    m_Address: itemicon_document
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da8c1375151a6e84cae70da9bbefe1e5
+    m_Address: itemicon_dynamite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0e52c0d55175ef4d8315c2806e255ac
+    m_Address: itemicon_eatrh
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7355ea3ded516745975568b4a89efa4
+    m_Address: itemicon_egg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37a7f485add89d646a6c3f0d46730182
+    m_Address: itemicon_energy_0_green
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bbaeb1d75feaea45901d105f4061073
+    m_Address: itemicon_energy_0_pruple
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c13b46d1be346af4284cb692a6295bd9
+    m_Address: itemicon_energy_0_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a21a7909067b70d489b9b7ddbde0d38d
+    m_Address: itemicon_energy_0_yellow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91a7dae50354e654dbdf612e68caafa1
+    m_Address: itemicon_energy_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 503a14d252805254f8e2b7f4c859df53
+    m_Address: itemicon_equipment_armor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0e6d5adec99fb04d83576ab33201941
+    m_Address: itemicon_equipment_arrows
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8005001dc372c7d4eb1a614d626af094
+    m_Address: itemicon_equipment_helmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87aa40c9c72286b43be54fac942896fe
+    m_Address: itemicon_equipment_helmet_viking
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd51ac8a6f267c74caeb871436a2d8d3
+    m_Address: itemicon_equipment_helmet_witch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: effcf7a8a1072a240bebfa3093ad0899
+    m_Address: itemicon_equipment_ring
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bd375ce2dcb2e74bb0a0366fdf0430c
+    m_Address: itemicon_equipment_shield
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90b7fab767060a3489ac07c827d54573
+    m_Address: itemicon_equipment_shield_viking
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 964a8d9e1184b1e48a315bb85f05b126
+    m_Address: itemicon_equipment_sword
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9a1feda29773c04a8ff9c262ed53da9
+    m_Address: itemicon_equipment_weapon_ax
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3accd59b949ba26499e4876a21be9ae5
+    m_Address: itemicon_equipment_weapon_battle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40f5af40a0c29574792c3f7993866783
+    m_Address: itemicon_equipment_weapon_bow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46b66093402205c4090cdd0a5d71f8bf
+    m_Address: itemicon_equipment_weapon_hammer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b41b740e3e90bee409b475b65069c04d
+    m_Address: itemicon_equipment_weapon_spear
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 723c916e924ed084894a527065d48ba5
+    m_Address: itemicon_eye
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ccde08c5feadc14e82d07d337f22a22
+    m_Address: itemicon_feather
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bba0bde0aa2928e49884334235f16490
+    m_Address: itemicon_fire
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd20c4660d7eeb748acaf49a47671764
+    m_Address: itemicon_flag_0_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3cd0f0e670f02e45b35dbc012a806b6
+    m_Address: itemicon_flag_0_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae797e5dce222c84d90ea122fad2fd16
+    m_Address: itemicon_flag_1_clan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cff7496c8523b048bf99cd8ae2a62d9
+    m_Address: itemicon_flag_pirate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf2ea954c8a6c734a9512d5e33672ac2
+    m_Address: itemicon_flask_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 548769f75aa16d04387b7c31a1f73538
+    m_Address: itemicon_flask_green
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c91a1b4f61a35ed4bbc648d0f6d90c14
+    m_Address: itemicon_flask_purple
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e98b38076eccd3549b26de4f092b8dc9
+    m_Address: itemicon_flask_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3785c06f7404ca54993bece5e0eaeb9d
+    m_Address: itemicon_friends
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce5021b868f94c14ab8f3ae044c81e21
+    m_Address: itemicon_gear
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c73286be7b97d94d898056eefe2fbbc
+    m_Address: itemicon_gem_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b143d9d8520e20458ffa51f63d35248
+    m_Address: itemicon_gem_green
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5071e95a7e31474b887f87529a84321
+    m_Address: itemicon_gem_purple
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4c22e9bfeb43fd4f9aab11342814771
+    m_Address: itemicon_gift_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e83a50b582d91c44a91a2a32e1e1b82
+    m_Address: itemicon_gift_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13ae8621294624942b24c8c6c82be545
+    m_Address: itemicon_globe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f8c02fe1e722794aa34bd2801c14202
+    m_Address: itemicon_glove
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dca376f1a83c18d49ada4d38d54925ab
+    m_Address: itemicon_heart
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83128a2b10a77c64abf55872ea30288c
+    m_Address: itemicon_home
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79203f4b993c3414fa0b679b14f9978d
+    m_Address: itemicon_home_shop_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb951a63a87fae249af0c22db852b229
+    m_Address: itemicon_home_shop_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86f9027599dc8e14b832d1caa1771a07
+    m_Address: itemicon_hourglass
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 914c1376775655d4ba24ee1a776bfeec
+    m_Address: itemicon_hp
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e98bce80a7544cd488f4d6a92417e3f5
+    m_Address: itemicon_key_gold
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5936c99ad3954746902b24f53dfb1f7
+    m_Address: itemicon_key_silver
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53f2c0fdfa45dd9449345628a8b76ddb
+    m_Address: itemicon_leaderboard
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4932537ff4833e441b946fe8be47e14c
+    m_Address: itemicon_lock
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb483995c75584e4db71e429a3e07bd4
+    m_Address: itemicon_magnet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a49f27238d83ff479f08edac7c7416f
+    m_Address: itemicon_mail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a84954e541aa7644db28877c4dbf1273
+    m_Address: itemicon_mail_open
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c947619f77b73d4c8da81ef6a4abcec
+    m_Address: itemicon_map
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41eae024d28908b4babea96e395d334d
+    m_Address: itemicon_map_pin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a273301d689224f488d2ee4dc1195290
+    m_Address: itemicon_map_route
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91c21fea98834494bb0eb94bb58e69fa
+    m_Address: itemicon_meat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d3dd172b2ab1e54fb04385baf74dd34
+    m_Address: itemicon_medal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a22e1fd1228aef43aab8ff7442d7d5e
+    m_Address: itemicon_megaphone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc92e745e46178d4f966791ec1a2c870
+    m_Address: itemicon_money
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc8ba3e19d30f06418ead2070f09b242
+    m_Address: itemicon_mortarboard_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e27784597a65be4eb86b5a1bf5277ce
+    m_Address: itemicon_mortarboard_navy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b3f8e1462d9fe940b61d65d9511c87e
+    m_Address: itemicon_movie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 863d836515e3302499272b27497b197c
+    m_Address: itemicon_mushroom_brown
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e5bb4683d218984fa925064252b240b
+    m_Address: itemicon_mushroom_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb8d6e8ae4618d143a77a64ffe585174
+    m_Address: itemicon_news
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84f8309f57a86284cb27851597f8756e
+    m_Address: itemicon_paper_airplane_yellow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1f2bc50672600e4199abe1b0f0de142
+    m_Address: itemicon_pencil
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a534ef55ca9a9394a98bc51eea437ab3
+    m_Address: itemicon_pick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffc16fea7be73ea44878598a8516db90
+    m_Address: itemicon_piggy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19cce6d8928ca0440bea7c67d71de09c
+    m_Address: itemicon_pill
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 173855cc9e7ec9244b25252920e10b4c
+    m_Address: itemicon_pizza
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60d31800cebe7eb4a913703338c4e8d9
+    m_Address: itemicon_poo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f08d26dcda8833044b3652631667d3a7
+    m_Address: itemicon_post
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d9ff716f75a3514c89777362bf89794
+    m_Address: itemicon_postbox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 648b132ceefb7344ea7c5f42663c25aa
+    m_Address: itemicon_pot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0b3ec17548f93a4fa54204bb71b04d3
+    m_Address: itemicon_pouch_brown
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d445629971666b74db16d4bc56cf7e4f
+    m_Address: itemicon_pouch_green
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb179d2a2642ea148b4021d6d9a60429
+    m_Address: itemicon_pumpkin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15ce8641f110aa54bbebc3ecfb604a73
+    m_Address: itemicon_rainbow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cf5ffd084314ed449f3f5ff99a1b97e
+    m_Address: itemicon_rocket
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 615fd19551d86ec419964fb7984f37c4
+    m_Address: itemicon_scale
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6ca43feeb7d66b47b1093745a227f43
+    m_Address: itemicon_scroll_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ce6e2a54c3ba6c40855ae29ae09b0d5
+    m_Address: itemicon_scroll_1_certificate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5bda2ea8d50396645a811fb250deffbb
+    m_Address: itemicon_scroll_1_stats
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: abd93f11912ff2543bafaeea3edd1281
+    m_Address: itemicon_search
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf24b5057316c094eb456bb78a6c6508
+    m_Address: itemicon_send_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80986c0a0f7760345aa72a7a30098c3a
+    m_Address: itemicon_setting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d61af7c4e8ba2bb45bcce9e62b4998fa
+    m_Address: itemicon_skull
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 987f4be20b1e5934c8919ece7848b7c7
+    m_Address: itemicon_skull_side
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57fa709e3eac4634aadec4b62141685a
+    m_Address: itemicon_star_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff7d502f7dcc6144590220c02acad6b6
+    m_Address: itemicon_star_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc659a337317efb48ab236c2319e5488
+    m_Address: itemicon_target_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f13e910d803d6a4469797cf9aec2b7f3
+    m_Address: itemicon_target_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4d99a0d83a9a1d4692fdd6b53c1c9fb
+    m_Address: itemicon_ticket_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9428e52808623248bdb2891a27a3e25
+    m_Address: itemicon_ticket_gold
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1aaf1d62204f6824b807dc9b16711596
+    m_Address: itemicon_tree
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c17b0f20fc94ef419feef371ce0487e
+    m_Address: itemicon_trophy_bronze
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a88a9ab425416749a6e90c44336f448
+    m_Address: itemicon_trophy_gold
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39fb546a2f36af247bc32817891353e3
+    m_Address: itemicon_trophy_silver
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c6df19ba8f2cd34fab12da4949f81b5
+    m_Address: itemicon_tv
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02343068b8b28c740804c8b3d2507c80
+    m_Address: itemicon_unicorn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 794076c53e02d4d458f328e4997cb9f1
+    m_Address: itemicon_watch_1-1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89c9ee7377733b146b278476c144cc90
+    m_Address: itemicon_watch_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 803e6a0b662e36349bd426e26f4314a8
+    m_Address: itemicon_watch_stopwatch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aace7eb04947d964fa02b7388948ceac
+    m_Address: itemicon_waterdrop_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53a85c66ff7a3624f98adab52ba2e2aa
+    m_Address: itemicon_waterdrop_purple
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df8fbf2ce978bcf4386ee41636941e61
+    m_Address: Popup02_Frame1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_InventoryPanel
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea2f1205d5287444ebab0d8831d94fb2
+    m_Address: icon_dlalog_heart
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fd339b76e14ad24399d4818008b8cd3
+    m_Address: icon_dlalog_location
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7750187ce417b3f4c97fca2729e1e0bd
+    m_Address: icon_dlalog_phone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8063a97607c5ab40b827de0edd6df7e
+    m_Address: icon_dlalog_photo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adb080882291cc54c97014b56310513f
+    m_Address: icon_dlalog_smile
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e3ca43e3d54bce47be2dd408761cdef
+    m_Address: icon_home_hammer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b928262a94d921b43adde6a5f6b17b44
+    m_Address: icon_home_hoe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bac76f04af169d34cad5385eff047622
+    m_Address: icon_home_shovel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5297b3dc4920d1448cf9a7eae925241
+    m_Address: icon_home_status_close
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7d0a11eb3ca8c74a8fe5866b65408bf
+    m_Address: icon_home_status_datails
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a589e2cfa028dc845b737c15d8094864
+    m_Address: icon_home_status_ok
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1585f745e4cac6742982b18fac8349e4
+    m_Address: icon_home_status_remove
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 363b16084857af54b9a87b124cd01aa2
+    m_Address: icon_home_status_rotate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31cb4969047eb99498e0e96170fb2502
+    m_Address: icon_ship
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a3900e32a2c7a644904a140735b8b5f
+    m_Address: pic_avatar_status1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22bd32e78f79e344f8d8c197778aa60a
+    m_Address: pic_square_dialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 975507afc4df36d4eaa7bcca118a9065
+    m_Address: pic_white_dialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Main
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7179b445bb7f842498a19582d58673f7
+    m_Address: icon_mining_magnifier
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Treasure
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d646e0a623d11524d9c16f4e4c2dda36
+    m_Address: icon_mining_map
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Treasure
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca921a430673a004d86a6b9de194ed97
+    m_Address: pic_mining
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Treasure
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8c428d57bc73264882220b538afcd4c
+    m_Address: btn_sm_square_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_WishingTree
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de3b97c58174aed418a746636f076f4d
+    m_Address: pic_tree_game_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_WishingTree
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 951c2ed5a50104e429a97948c3c80f56
+    m_Address: pic_wish_tree
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_WishingTree
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6a14f4eb2028ed4e8f70f7a8a9dbf50
+    m_Address: btn_clean_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3a2549ebfd28bb4992b77c2a0b5841a
+    m_Address: btn_clean_grey
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbdc197c73e3eaf48a26da777712df02
+    m_Address: btn_clean_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6f766a09d59bc74f8781e9b6a8ea7ba
+    m_Address: btn_details
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fdf547695cae1c549bd691b01a32f62b
+    m_Address: btn_dura_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75cf2d3b24b4bd2429b546d53f67d26d
+    m_Address: btn_dura_grey
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a1c0ee3f1651454daa2525069dd3ba1
+    m_Address: btn_dura_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 512e6d689e98a4141a53892b231821b8
+    m_Address: btn_popup_back
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2beb8a03d528cb742a2e9d495b278855
+    m_Address: btn_popup_close
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 481d97a8ad7f0f0428866fc9a862cc0c
+    m_Address: btn_sm_square_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc3ca129bc0664d44a0d515284493e06
+    m_Address: btn_sm_square_green
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bc569de47e49a044af6e0b26aec53df
+    m_Address: btn_sm_square_grey
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d4e56639e7353e4fbaffa18b49e63f8
+    m_Address: btn_sm_square_orange
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ed0e78f6f8b02f4aa777a893caef415
+    m_Address: btn_sm_square_yellow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84eaa3e9da4cf9c4aa73188d5f9fef9e
+    m_Address: chara_white_line_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ebf7c91ab0060741ba3bbffbcc3fbaa
+    m_Address: dialouge_white_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cc509316a144794692ce7bf2594afc5
+    m_Address: dialouge_white_bg_hook
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57a1f42235cabab479b97dfbfc1fa940
+    m_Address: icon_ad
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cf56d2568e910a47ba5932600631e5c
+    m_Address: icon_arrow_yellow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e27ca09bccf57344bfbcec65f904381
+    m_Address: icon_avatar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75576eed4cff6174b8506c9ad8b13894
+    m_Address: icon_avatar_shadow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82505f39cf4f59543826a60b188dcbfa
+    m_Address: icon_avatar_tourist
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b06a1fab01a9d04ba0a19f9a1dc32c3
+    m_Address: icon_badge
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2c89adfd4711bd489412f8916f9ab3e
+    m_Address: icon_bank_card
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce427e0cb601543408d0f73e35daf976
+    m_Address: icon_bank_card_vip
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c2842e3bf77ab24bb20fae70684628b
+    m_Address: icon_grey_lock
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30e3c3ca0fa84e5429ca52805d367718
+    m_Address: icon_progress_clock
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 710c662b496a19644aa73eb6571398a8
+    m_Address: icon_red_circle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5c7f4fb535ac184f9cbf17472e5f23a
+    m_Address: icon_ship_star
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2836f37ce68a8cf41baf38fbb296ef72
+    m_Address: icon_ship_star_half
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bd7b4e86d8317e47a8ea906d89cc7d6
+    m_Address: icon_status_ok
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eca5fe05220282944920410bba0cb106
+    m_Address: input_orange_light_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1307daa2c77c6da4db87abf659b6ca0b
+    m_Address: light_blue_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bce0e02a0e0c5a49ae34b4663d28e58
+    m_Address: pic_ribbon_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f3e6109d91124b448002077401e30fd
+    m_Address: pic_ribbon_orange
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06559848f359ddd45b2afdb2af78c7ac
+    m_Address: pic_ribbon_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a52bd4ce00564f499c46713f4c96087
+    m_Address: popup_board_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ba95a9647a32a543a6a72cc43d9e323
+    m_Address: popup_board_grey
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b30f66a482f9eb48ab3827a17b05e9d
+    m_Address: popup_board_wood
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe844c714ab64ed41b95cb0fc2ac7294
+    m_Address: popup_dark_wood_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b52cec79fadffed45a611e4eb43f0acb
+    m_Address: popup_grey_line_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8a9cf8cef4764245af738564d7b7cb4
+    m_Address: popup_light_orange_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e2162ad373d9234a9beaeb3bfad7b97
+    m_Address: popup_light_yellow_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc7d0d834f374ae4382c7ac7c8e4a92c
+    m_Address: popup_white_line_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0c274f74b5f11740a16a9f218ff2768
+    m_Address: popup_wood_line_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28f12d5a12a21bf4d920d7eea5d50d6a
+    m_Address: popup_yellow_line_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70ad6995ffd1a21418ba2b9ec9bb0e3a
+    m_Address: progress_bule_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a407821c89e6a9f4b804f814d0254ded
+    m_Address: progress_ing_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bdd49e18b88bb674d9e6ccc5bba5e62c
+    m_Address: progress_ing_green
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19456f58af31ec947a7c8aaa4f55328e
+    m_Address: progress_ing_orange
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 973af9f19a83e604ab0bf2d5234dbf5b
+    m_Address: progress_ing_yellow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8f3d2fbb52b37c42968ad3e4cd8e102
+    m_Address: select_yellow_light
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c33695a4d7e9dfb4caf928b8f3a0f563
+    m_Address: split _line
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20c55d1482192fc4aa71b6715a63fa87
+    m_Address: square_grey_line_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7612883bd031ffe45bece807b2fbb014
+    m_Address: square_mask
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afaf3b875c65d434ba4301b50cbc98c5
+    m_Address: square_white_line_bg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea7682b04f919c449b9c8e69471b4b99
+    m_Address: white
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_GlobalUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfc3844719b59004c89da7d26d034d2a
+    m_Address: 10001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_ItemUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8815fd5e85a028440a9d124e3ff3e724
+    m_Address: 10002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_ItemUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1aa6918d8e6bc834285921dde0939d7f
+    m_Address: 10003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_ItemUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 389be0ae005307844a393f0a4b784e39
+    m_Address: 10101
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_ItemUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9eff9bf2141fdee44b461d306617f0cd
+    m_Address: icon_character1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdb96e61ba001f540a23cc72cf2578b9
+    m_Address: icon_character2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8fead5761b862d4e83f2856a637007b
+    m_Address: icon_character3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5476fef7c25f86643950c2e195eeb452
+    m_Address: icon_character4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5de8468385958c048958226c38e4322d
+    m_Address: icon_character5
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3a41483a60340340931e59aca393628
+    m_Address: icon_character6
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57f027a7d76d2d84389ecac7752bdf4b
+    m_Address: icon_character7
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 172bcc5e483ca1e409fba614872f9625
+    m_Address: icon_character8
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_RoleUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01496eb5bce40e144af6a198976f1bbe
+    m_Address: pic_list_sea1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_SeaAreaUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58fcbf21725e7d84091382fc71ca4de8
+    m_Address: icon_status_ship1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_ShipUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eecdbe7a97c782842a5b194926639aa0
+    m_Address: Blizzard
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_WeatherIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30ec12467754b974a944e153e2464189
+    m_Address: Cloudy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_WeatherIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 462c4742ea9125d4787bb54c0b5234ea
+    m_Address: Rain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_WeatherIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22043e1f6e97ead4d9bf125ed027a8b7
+    m_Address: RainStorm
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_WeatherIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 42d22ec1a8f28e047900be6a44f8d6dc
+    m_Address: Snow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_WeatherIcon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88b9164bff736734ab1dd25e29feded1
+    m_Address: Sunny
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Atlas_Global_WeatherIcon
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c427152164d2196479c4957b7fecfeb9, type: 2}
   m_SchemaSet:
