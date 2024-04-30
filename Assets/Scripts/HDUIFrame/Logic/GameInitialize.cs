@@ -16,7 +16,7 @@ public class GameInitialize : MonoSingleton<GameInitialize>
 
     public bool ShowFrame;           //显示帧数        
     public int TargetFrame;          //限定帧数      
-    public bool ShowDebugGrid;
+    //public bool ShowDebugGrid;
 
     [Header("开启更新")] 
     public bool update;
@@ -69,9 +69,11 @@ public class GameInitialize : MonoSingleton<GameInitialize>
         {
             yield return null;
         }
+        yield return new WaitForEndOfFrame();
 
-        //UIManager.Instance.RegisterListener();
         //CameraController.Instance.RegisterListenner();
+        LogUtil.Log("Game Initialize loading finish！！！");
+        LevelManager.Instance.StartLevel(Global.LOGIN_LEVEL_NAME);
     }
 
     void OnGameInit()

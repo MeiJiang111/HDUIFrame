@@ -5,8 +5,6 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-
-
 public class GameUpdate : MonoSingleton<GameUpdate>
 {
     public enum UpdateState
@@ -64,7 +62,7 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         
     }
 
-    public void StartGameUpdate(bool update = true)
+    public void StartGameUpdate(bool update_ = true)
     {
         ResourceManager.Instance.AddressableErrorEvent += OnAddressableErrored;
         updateCoroution = StartCoroutine(StartGameUpdateImple());
@@ -74,14 +72,6 @@ public class GameUpdate : MonoSingleton<GameUpdate>
     {
         _lastName = arg1.DebugName;
         _lastErr = arg2.ToString();
-    }
-
-    /// <summary>
-    /// 游戏更新完成，进入游戏
-    /// </summary>
-    void UpdateFinished()
-    {
-        StartCoroutine(GameInitialize.Instance.EnterGame());
     }
 
     IEnumerator StartGameUpdateImple()
@@ -158,5 +148,13 @@ public class GameUpdate : MonoSingleton<GameUpdate>
 
         //资源更新下载完成，进入游戏
         UpdateFinished();
+    }
+
+    /// <summary>
+    /// 游戏更新完成，进入游戏
+    /// </summary>
+    void UpdateFinished()
+    {
+        StartCoroutine(GameInitialize.Instance.EnterGame());
     }
 }

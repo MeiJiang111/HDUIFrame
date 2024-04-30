@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 
 
@@ -10,7 +9,7 @@ public class GameUpdatePanel : MonoBehaviour
     public Slider slider;
     public TextMeshProUGUI textLabel;
     public TextMeshProUGUI textPercent;
-
+    
     float SliderValue
     {
         set
@@ -18,10 +17,9 @@ public class GameUpdatePanel : MonoBehaviour
             slider.value = value;
             textPercent.text = string.Format("{0:P2}", value);
         }      
-
     }
 
-    void Start()
+    private void Awake()
     {
         textLabel.text = string.Empty;
         SliderValue = 0;
@@ -29,15 +27,6 @@ public class GameUpdatePanel : MonoBehaviour
         var update = GameUpdate.Instance;
         update.UpdateStateChangedEvent += OnUpdateStateChanged;
         update.DownLoadProcessChangeEvent += OnDownLoadProcessChanged;
-
-        //var sceneMgr = SceneManager.Instance;
-        //sceneMgr.SceneMgrLoadEndEvent += OnOpenLogin;
-    }
-
-    
-    void Update()
-    {
-        
     }
 
     private void OnDestroy()
@@ -48,17 +37,6 @@ public class GameUpdatePanel : MonoBehaviour
             update.UpdateStateChangedEvent -= OnUpdateStateChanged;
             update.DownLoadProcessChangeEvent -= OnDownLoadProcessChanged;
         }
-
-        //var sceneMgr = SceneManager.Instance;
-        //if (sceneMgr != null)
-        //{
-        //    sceneMgr.SceneMgrLoadEndEvent -= OnOpenLogin;
-        //}
-    }
-
-    private void OnDownLoadProcessChanged(float obj)
-    {
-        SliderValue = obj;
     }
 
     private void OnUpdateStateChanged(GameUpdate.UpdateState obj)
@@ -87,6 +65,11 @@ public class GameUpdatePanel : MonoBehaviour
                 textLabel.text = "版本更新完成";
                 break;
         }
+    }
+
+    private void OnDownLoadProcessChanged(float obj)
+    {
+        SliderValue = obj;
     }
 
     private void OnOpenLogin()
