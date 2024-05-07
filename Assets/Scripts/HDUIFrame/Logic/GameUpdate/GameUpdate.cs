@@ -101,7 +101,7 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         yield return new WaitForEndOfFrame();
 
         updateCatalogs = handler.Result;
-        Debug.Log("ddd -- updateCatalogs.count == " + updateCatalogs.Count);
+        //Debug.Log("ddd -- updateCatalogs.count == " + updateCatalogs.Count);
         Addressables.Release(handler);
         if (updateCatalogs.Count > 0)
         {

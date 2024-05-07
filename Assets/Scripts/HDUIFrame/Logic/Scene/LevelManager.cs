@@ -81,7 +81,6 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     public bool StartLevel(string name_, bool autoActive = true)
     {
-        Debug.Log("ddd -- LevelManager -- StartLevel() == " + levelLoader.InLoading);
         Debug.Log($"ddd -- LevelManager -- StartLevel() == name_ == {name_}");
 
         if (levelLoader.InLoading)
@@ -107,6 +106,7 @@ public class LevelManager : MonoSingleton<LevelManager>
     {
         yield return null;
         StartLoadingNewLevelEvent?.Invoke(_newLevel);
+        yield return null;
         levelLoader.LoadLevelAsync(_newLevel, _autoActive);
     }
 }

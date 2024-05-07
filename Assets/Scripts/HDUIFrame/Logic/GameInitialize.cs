@@ -75,9 +75,4 @@ public class GameInitialize : MonoSingleton<GameInitialize>
         LogUtil.Log("Game Initialize loading finish£¡£¡£¡");
         LevelManager.Instance.StartLevel(Global.LOGIN_LEVEL_NAME);
     }
-
-    void OnGameInit()
-    {
-        _gameInit = true;
-    }
 }
