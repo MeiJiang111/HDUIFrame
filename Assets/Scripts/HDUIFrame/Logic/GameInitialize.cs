@@ -16,8 +16,7 @@ public class GameInitialize : MonoSingleton<GameInitialize>
 
     public bool ShowFrame;           //显示帧数        
     public int TargetFrame;          //限定帧数      
-    //public bool ShowDebugGrid;
-
+    
     [Header("开启更新")] 
     public bool update;
     public List<LoadPrefabConfig> firstLaodPrefabs;
