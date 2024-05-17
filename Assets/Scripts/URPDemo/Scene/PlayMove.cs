@@ -7,7 +7,8 @@ public class PlayMove : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Camera cam;
- 
+    public Animator animator;
+     
     void Start()
     {
         
@@ -25,7 +26,13 @@ public class PlayMove : MonoBehaviour
                 Debug.Log(hit.point);
                 Vector3 point = hit.point;
                 agent.SetDestination(point);
+                //RefreshAnimation();
             }
         }
+    }
+
+    private void RefreshAnimation()
+    {
+        animator.SetFloat("speed",agent.velocity.sqrMagnitude);
     }
 }
