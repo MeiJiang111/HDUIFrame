@@ -71,10 +71,4 @@ public class GameUpdatePanel : MonoBehaviour
     {
         SliderValue = obj;
     }
-
-    private void OnOpenLogin()
-    {
-        LogUtil.Log("GameUpdatePanel OnClosePanel Action 10 10 10");
-        ResourceManager.Instance.DestroyInstance(this.gameObject);
-    }
 }

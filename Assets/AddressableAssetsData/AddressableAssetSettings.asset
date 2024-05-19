@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 623b943d815e9d845945e186dbf2443f
   m_currentHash:
     serializedVersion: 2
-    Hash: 1efabd529742dc8d945caddfd1188e4c
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -50,7 +50,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6753f4d74a96c8549bf84d244c707c9c, type: 2}
   - {fileID: 11400000, guid: c80cfa537822c614493c50011ad193d7, type: 2}
   - {fileID: 11400000, guid: 11dc41aef0f53f5499e065babf92f491, type: 2}
-  - {fileID: 11400000, guid: ca4605b59b858a447bd12aff5187a745, type: 2}
   - {fileID: 11400000, guid: 1c2bd0e74e8e61c4cbfe0fb80d8c4ae5, type: 2}
   - {fileID: 11400000, guid: 18b95a54e7a672d4cbad8b0727c4be34, type: 2}
   - {fileID: 11400000, guid: 636f064b0d86da24a99d0b6db3329d65, type: 2}
@@ -58,6 +57,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 42901ff21c4825949b4053f525c5bdf0, type: 2}
   - {fileID: 11400000, guid: 66e70cdeba03c304aaa431eb073c37a3, type: 2}
   - {fileID: 11400000, guid: ed8201daa2b1f424bb9edc6e9a6f7824, type: 2}
+  - {fileID: 11400000, guid: 3ee9bc723ce00254f93a63cbd44a424b, type: 2}
+  - {fileID: 11400000, guid: ca4605b59b858a447bd12aff5187a745, type: 2}
+  - {fileID: 11400000, guid: c0f2dc489b6b9b347b18353e4f2a7091, type: 2}
+  - {fileID: 11400000, guid: 1befe3bf2664f9f48bdff67f4a93921b, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -164,6 +167,9 @@ MonoBehaviour:
     - OtherUI_Sprite_Component_Slider_Slider_Demo_Dark
     - OtherUI_Sprite_Component_Slider_Slider_Demo_Light
     - GameUpdate
+    - Material
+    - Setting
+    - Settings
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 77ccf87e4f68e44468379030e2ccb2be, type: 2}

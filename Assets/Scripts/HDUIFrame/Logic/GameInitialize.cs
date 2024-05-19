@@ -70,8 +70,7 @@ public class GameInitialize : MonoSingleton<GameInitialize>
         }
         yield return new WaitForEndOfFrame();
 
-        //CameraController.Instance.RegisterListenner();
-        //LogUtil.Log("Game Initialize loading finish£¡£¡£¡");
-        //LevelManager.Instance.StartLevel(Global.LOGIN_LEVEL_NAME);
+        LogUtil.Log("Game Initialize loading finish£¡£¡£¡");
+        LevelManager.Instance.StartLevel(Global.LOGIN_LEVEL_NAME);
     }
 }

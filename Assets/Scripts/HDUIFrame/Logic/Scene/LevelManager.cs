@@ -11,7 +11,9 @@ public struct AsyncPrefabs
 }
 
 
-
+/// <summary>
+/// ≥°æ∞π‹¿Ì∆˜
+/// </summary>
 public class LevelManager : MonoSingleton<LevelManager>
 {
     /// <summary>
@@ -75,13 +77,13 @@ public class LevelManager : MonoSingleton<LevelManager>
         levelAsyncPrefabs = new List<AsyncPrefabs>();
 
         //levelLoader.LevelActivedEvent += OnLevelActived;
-        //levelLoader.LevelStartLoadEvent += OnLevelStartLoad;
+        levelLoader.LevelStartLoadEvent += OnLevelStartLoad;
         //levelLoader.LevelLoadedEvent += OnLevelLoaded;
     }
 
     public bool StartLevel(string name_, bool autoActive = true)
     {
-        Debug.Log($"ddd -- LevelManager -- StartLevel() == name_ == {name_}");
+        Debug.Log($"ddd -- LevelManager Script -- StartLevel() == name_ == {name_}");
 
         if (levelLoader.InLoading)
         {
@@ -108,5 +110,10 @@ public class LevelManager : MonoSingleton<LevelManager>
         StartLoadingNewLevelEvent?.Invoke(_newLevel);
         yield return null;
         levelLoader.LoadLevelAsync(_newLevel, _autoActive);
+    }
+
+    private void OnLevelStartLoad()
+    {
+
     }
 }

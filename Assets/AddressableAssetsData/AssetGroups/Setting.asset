@@ -10,37 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: GameUpdate
+  m_Name: Setting
   m_EditorClassIdentifier: 
-  m_GroupName: GameUpdate
+  m_GroupName: Setting
   m_Data:
     m_SerializedData: []
-  m_GUID: 8afa818e868c9ca4bbd2486870fa1d7c
+  m_GUID: 49a66e9afd4c08646a1b40475155bf61
   m_SerializeEntries:
-  - m_GUID: 27b665df725fd724a8a21922ae5221df
-    m_Address: UpdatePanel
+  - m_GUID: 250d710bb9f8299448ca01dec1cc1358
+    m_Address: UniversalRenderPipelineAsset
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Prefabs_UI_Update
-    - GameUpdate
+    - Setting
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 41f6edbb1c98b4a4a9e4600dcb5767c0
-    m_Address: white
+  - m_GUID: 329fbed1dbd414149995302a3d3a6fb9
+    m_Address: UniversalRenderPipelineAsset_Renderer
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Atlas_GameUpdate
-    - GameUpdate
+    - Setting
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c417b9a7c4933664a9c4e2463b613ccb
-    m_Address: bg1
+  - m_GUID: 81cc1e07e656fca47b6f56a220a4d8d2
+    m_Address: UniversalRenderPipelineGlobalSettings
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Atlas_GameUpdate
-    - GameUpdate
+    - Setting
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c427152164d2196479c4957b7fecfeb9, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 6e1163f1442d78b42a98c2b8544f804c, type: 2}
-    - {fileID: 11400000, guid: 9d2f51b6404becb4cb44c001044f5fdc, type: 2}
+    - {fileID: 11400000, guid: 4a3cd51d3c00f544cbaf817dabace878, type: 2}
+    - {fileID: 11400000, guid: e58fcaf3f425b0c43b5df909d1de3e03, type: 2}

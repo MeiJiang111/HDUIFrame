@@ -10,37 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: GameUpdate
+  m_Name: Scenes
   m_EditorClassIdentifier: 
-  m_GroupName: GameUpdate
+  m_GroupName: Scenes
   m_Data:
     m_SerializedData: []
-  m_GUID: 8afa818e868c9ca4bbd2486870fa1d7c
+  m_GUID: c1fe45a128143a04588c718ddbe15809
   m_SerializeEntries:
-  - m_GUID: 27b665df725fd724a8a21922ae5221df
-    m_Address: UpdatePanel
+  - m_GUID: 4dfd28cc1d6b3a9448e953b079c92ef2
+    m_Address: InitGame
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Prefabs_UI_Update
-    - GameUpdate
+    - Scenes
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 41f6edbb1c98b4a4a9e4600dcb5767c0
-    m_Address: white
+  - m_GUID: bfea00bc52b73294ca9b4b00f36726fe
+    m_Address: Login
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Atlas_GameUpdate
-    - GameUpdate
+    - Scenes
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c417b9a7c4933664a9c4e2463b613ccb
-    m_Address: bg1
+  - m_GUID: dbd0f8b02aea8f34f87022a5bb07f223
+    m_Address: Main
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Atlas_GameUpdate
-    - GameUpdate
+    - Scenes
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c427152164d2196479c4957b7fecfeb9, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 6e1163f1442d78b42a98c2b8544f804c, type: 2}
-    - {fileID: 11400000, guid: 9d2f51b6404becb4cb44c001044f5fdc, type: 2}
+    - {fileID: 11400000, guid: a1b5af73fa905954eaee2d81cd7b4da7, type: 2}
+    - {fileID: 11400000, guid: c05fb37a40a54444396cb9cefd609302, type: 2}

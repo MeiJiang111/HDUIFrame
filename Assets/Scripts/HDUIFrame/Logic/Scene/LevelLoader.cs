@@ -56,6 +56,10 @@ public class LevelLoader : MonoSingleton<LevelLoader>
         Addressables.LoadSceneAsync(_newLevel, LoadSceneMode.Single, AutoActive).Completed += OnLevelLoaded;
     }
 
+    /// <summary>
+    /// ≥°æ∞º”‘ÿ
+    /// </summary>
+    /// <param name="handle_"></param>
     void OnLevelLoaded(AsyncOperationHandle<SceneInstance> handle_)
     {
         InLoading = false;
@@ -79,6 +83,7 @@ public class LevelLoader : MonoSingleton<LevelLoader>
                 _lastLevel = string.Empty;
             }
         }
+
         LevelLoadedEvent?.Invoke();
 
         if (AutoActive)

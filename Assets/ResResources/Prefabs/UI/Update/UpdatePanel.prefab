@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66db2eab7db6a794694a0792677dd7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 4293215280949935830}
   textLabel: {fileID: 4181879106010426632}
   textPercent: {fileID: 8421100256244003740}
 --- !u!1 &4705958318477692886
