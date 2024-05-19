@@ -74,6 +74,10 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         _lastErr = arg2.ToString();
     }
 
+    /// <summary>
+    /// 更新资源
+    /// </summary>
+    /// <returns></returns>
     IEnumerator StartGameUpdateImple()
     {
         CurrState = UpdateState.Init;
@@ -101,7 +105,6 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         yield return new WaitForEndOfFrame();
 
         updateCatalogs = handler.Result;
-        //Debug.Log("ddd -- updateCatalogs.count == " + updateCatalogs.Count);
         Addressables.Release(handler);
         if (updateCatalogs.Count > 0)
         {
@@ -111,6 +114,7 @@ public class GameUpdate : MonoSingleton<GameUpdate>
         else
         {
             CurrState = UpdateState.Finish;
+            DownLoadProcessChangeEvent?.Invoke(1);
             UpdateFinished();
         }
     }

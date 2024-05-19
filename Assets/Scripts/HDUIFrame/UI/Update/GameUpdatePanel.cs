@@ -2,8 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
-
 public class GameUpdatePanel : MonoBehaviour
 {
     public Slider slider;
@@ -31,12 +29,12 @@ public class GameUpdatePanel : MonoBehaviour
 
     private void OnDestroy()
     {
-        var update = GameUpdate.Instance;
-        if (update != null)
-        {
-            update.UpdateStateChangedEvent -= OnUpdateStateChanged;
-            update.DownLoadProcessChangeEvent -= OnDownLoadProcessChanged;
-        }
+        //var update = GameUpdate.Instance;
+        //if (update != null)
+        //{
+        //    update.UpdateStateChangedEvent -= OnUpdateStateChanged;
+        //    update.DownLoadProcessChangeEvent -= OnDownLoadProcessChanged;
+        //}
     }
 
     private void OnUpdateStateChanged(GameUpdate.UpdateState obj)

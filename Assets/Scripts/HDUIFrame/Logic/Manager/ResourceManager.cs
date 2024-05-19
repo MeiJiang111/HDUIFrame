@@ -25,7 +25,7 @@ public class ResourceManager : MonoSingleton<ResourceManager>
     private void AddressablesException(AsyncOperationHandle arg1, Exception arg2)
     {
         AddressableErrorEvent?.Invoke(arg1, arg2);
-        LogUtil.LogErrorFormat("[Addressable] {0}->{1}", arg1.DebugName, arg2.ToString());
+        LogUtil.LogErrorFormat("[Addressable ResourceManager] {0}->{1}", arg1.DebugName, arg2.ToString());
     }
 
     public void CreatInstanceAsync(string name_, Vector3 pos_, Quaternion rotation, Transform parent = null, Action<GameObject, object> success_ = null, Action<string, object> faild_ = null, object param_ = null)
