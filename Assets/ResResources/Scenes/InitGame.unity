@@ -450,6 +450,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_ColorMultiplier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7111987187617170088, guid: 27b665df725fd724a8a21922ae5221df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.4101562
+      objectReference: {fileID: 0}
     - target: {fileID: 7504173478453056452, guid: 27b665df725fd724a8a21922ae5221df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -557,6 +561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 907564613}
+  - component: {fileID: 907564614}
   m_Layer: 0
   m_Name: CameraNode
   m_TagString: Untagged
@@ -582,6 +587,19 @@ Transform:
   - {fileID: 955290000}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &907564614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907564612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6567ae6cbccf46e4b89d1fde6e597722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiCamera: {fileID: 955290003}
 --- !u!1 &955289999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +1105,6 @@ MonoBehaviour:
   ShowFrame: 1
   TargetFrame: 1000
   update: 1
-  firstLaodPrefabs: []
 --- !u!114 &1962340274
 MonoBehaviour:
   m_ObjectHideFlags: 0

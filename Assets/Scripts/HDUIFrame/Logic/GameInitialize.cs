@@ -11,13 +11,11 @@ public class GameInitialize : MonoSingleton<GameInitialize>
     public bool update;
    
     public event Action GameInitEvent;
-    bool _gameInit;
-
+   
     protected override void Awake()
     {
         base.Awake();
 
-        _gameInit = false;
         Application.targetFrameRate = TargetFrame;
         Application.runInBackground = true;
 
@@ -41,6 +39,6 @@ public class GameInitialize : MonoSingleton<GameInitialize>
     {
         yield return null;
         LogUtil.Log("GameInitialize EnterGame finish !!!");
-        //LevelManager.Instance.StartLevel(Global.LOGIN_LEVEL_NAME);
+        LevelManager.Instance.StartLevel(Global.LOGIN_LEVEL_NAME);
     }
 }
