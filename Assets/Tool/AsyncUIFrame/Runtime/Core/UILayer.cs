@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-public class UILayer : MonoBehaviour
+namespace Async.UIFramework 
 {
-    // Start is called before the first frame update
-    void Start()
+    [AttributeUsage(AttributeTargets.Class)]
+    public abstract class UILayer : Attribute, IComparable<UILayer>
     {
-        
-    }
+        public int CompareTo(UILayer other)
+        {
+            return GetOrder().CompareTo(other.GetOrder());
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public abstract string GetName();
+        public abstract int GetOrder();
     }
 }

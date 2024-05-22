@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PanelLayer : MonoBehaviour
+namespace Async.UIFramework
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PanelLayer : UILayer
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override string GetName() => "PanelLayer";
+        public override int GetOrder() => 100;
     }
 }

@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class WindowLayer : MonoBehaviour
+namespace Async.UIFramework
 {
-    // Start is called before the first frame update
-    void Start()
+    public class WindowLayer : UILayer
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override string GetName() => "WindowLayer";
+        public override int GetOrder() => 200;
     }
 }

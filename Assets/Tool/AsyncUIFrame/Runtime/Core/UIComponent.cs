@@ -1,18 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class UIComponent : MonoBehaviour
+namespace Async.UIFramework
 {
-    // Start is called before the first frame update
-    void Start()
+    [RequireComponent(typeof(RectTransform))]
+    [DisallowMultipleComponent]
+    public abstract class UIComponent<T> : UIBase where T : UIData
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public T Data { get; set; }
     }
 }
