@@ -6,7 +6,7 @@ using System.Reflection;
 using System;
 using System.Collections;
 using UnityObject = UnityEngine.Object;
-using Feif.Extensions;
+using Async.Extensions;
 
 # if UNITY_2020_1_OR_NEWER
 using UnityEditor.SceneManagement;
@@ -14,7 +14,7 @@ using UnityEditor.SceneManagement;
 using UnityEditor.Experimental.SceneManagement;
 #endif
 
-namespace Feif.UIFramework.Editor
+namespace Async.UIFramework.Editor
 {
     public static class UIAutoReference
     {

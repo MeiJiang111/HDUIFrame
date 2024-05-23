@@ -8,7 +8,7 @@ using UnityEditor;
 using UnityEngine;
 using System;
 
-namespace Feif.UIFramework.Editor
+namespace Async.UIFramework.Editor
 {
     public class TestEndAction : UnityEditor.ProjectWindowCallback.EndNameEditAction
     {

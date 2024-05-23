@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Feif.UIFramework.Editor
+namespace Async.UIFramework.Editor
 {
     public abstract class CodeSnippetGenerator
     {

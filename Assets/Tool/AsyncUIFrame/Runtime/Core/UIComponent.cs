@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Feif.UIFramework
+namespace Async.UIFramework
 {
     [RequireComponent(typeof(RectTransform))]
     [DisallowMultipleComponent]

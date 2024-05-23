@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Feif.Extensions;
+using Async.Extensions;
 using System.Linq;
 
-namespace Feif.UIFramework.Editor
+namespace Async.UIFramework.Editor
 {
     public class UGUIImageCodeSnippetGenerator : CodeSnippetGenerator
     {

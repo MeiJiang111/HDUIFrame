@@ -1,4 +1,4 @@
-namespace Feif.UIFramework
+namespace Async.UIFramework
 {
     public class PanelLayer : UILayer
     {
