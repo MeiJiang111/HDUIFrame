@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoSingleton<CameraController>
 {
-    public Camera uiCamera;
+    public Camera m_UICamera;
 
     protected override void Awake()
     {
