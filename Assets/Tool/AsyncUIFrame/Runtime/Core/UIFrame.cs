@@ -56,9 +56,15 @@ namespace Async.UIFramework
         {
             get
             {
-                if (panelStack.Count <= 0) return null;
+                if (panelStack.Count <= 0)
+                {
+                    return null;
+                }
 
-                if (panelStack.Peek().type == null) return null;
+                if (panelStack.Peek().type == null) 
+                {
+                    return null;
+                } 
 
                 if (instances.TryGetValue(panelStack.Peek().type, out var instance))
                 {
@@ -70,11 +76,24 @@ namespace Async.UIFramework
 
         private void Awake()
         {
-            if (canvas == null) throw new Exception("UIFrame初始化失败，请设置Canvas");
-            if (canvas.worldCamera == null) throw new Exception("UIFrame初始化失败，请给Canvas设置worldCamera");
-            if (layers == null) throw new Exception("UIFrame初始化失败，请设置layers");
+            if (canvas == null) 
+            {
+                throw new Exception("UIFrame初始化失败，请设置Canvas");
+            }
+
+            if (canvas.worldCamera == null) 
+            {
+                throw new Exception("UIFrame初始化失败，请给Canvas设置worldCamera");
+            }
+
+            if (layers == null) 
+            {
+                throw new Exception("UIFrame初始化失败，请设置layers");
+            }
+            
             Canvas = canvas;
             Camera = canvas.worldCamera;
+
             layerTransform = layers;
             layerTransform.anchorMin = Vector2.zero;
             layerTransform.anchorMax = Vector2.one;
@@ -391,6 +410,7 @@ namespace Async.UIFramework
                 .Select(item => item.GetComponent<UIBase>())
                 .ToArray();
             var parentUI = GetParent(uibases.FirstOrDefault());
+
             foreach (var item in uibases)
             {
                 if (parentUI == null) break;
@@ -399,6 +419,7 @@ namespace Async.UIFramework
 
                 parentUI.Children.Remove(item);
             }
+
             foreach (var item in uibases)
             {
                 try
@@ -425,6 +446,7 @@ namespace Async.UIFramework
                .Select(item => item.GetComponent<UIBase>())
                .ToArray();
             var parentUI = GetParent(uibases.FirstOrDefault());
+
             foreach (var item in uibases)
             {
                 if (parentUI == null) break;
@@ -433,6 +455,7 @@ namespace Async.UIFramework
 
                 parentUI.Children.Remove(item);
             }
+
             foreach (var item in uibases)
             {
                 try
@@ -464,6 +487,7 @@ namespace Async.UIFramework
                     keys.Add(item.Key);
                 }
             }
+
             foreach (var item in keys)
             {
                 instances.Remove(item);
@@ -493,11 +517,13 @@ namespace Async.UIFramework
                 TrySetData(instance.GetComponent<UIBase>(), data);
                 return instance;
             }
+
             GameObject refInstance = null;
             if (OnAssetRelease != null)
             {
                 refInstance = await OnAssetRequest.Invoke(type);
             }
+
             var uibase = refInstance.GetComponent<UIBase>();
             if (uibase == null) throw new Exception("预制体没有挂载继承自UIBase的脚本");
             var parent = GetOrCreateLayerTransform(type);
@@ -508,7 +534,10 @@ namespace Async.UIFramework
 
         private static void ReleaseInstance(Type type)
         {
-            if (type == null) return;
+            if (type == null) 
+            {
+                return;
+            } 
 
             if (instances.TryGetValue(type, out var instance))
             {
@@ -521,8 +550,11 @@ namespace Async.UIFramework
 
         private static async Task DoRefresh(IList<UIBase> uibases)
         {
-            if (uibases == null) return;
-
+            if (uibases == null)
+            {
+                return;
+            }
+           
             for (int i = 0; i < uibases.Count; ++i)
             {
                 if (uibases[i] == null) continue;
@@ -544,8 +576,11 @@ namespace Async.UIFramework
 
         private static void DoBind(IList<UIBase> uibases)
         {
-            if (uibases == null) return;
-
+            if (uibases == null) 
+            {
+                return;
+            }
+           
             for (int i = 0; i < uibases.Count; ++i)
             {
                 if (uibases[i] == null) continue;
@@ -647,10 +682,12 @@ namespace Async.UIFramework
                 .Select(item => item.GetComponent<UIBase>())
                 .ToArray();
             TrySetData(instance.GetComponent<UIBase>(), data);
+
             foreach (var item in uibases)
             {
                 item.Children.Clear();
             }
+
             foreach (var item in uibases)
             {
                 var parentUI = GetParent(item);
@@ -658,6 +695,7 @@ namespace Async.UIFramework
                 parentUI.Children.Add(item);
                 item.Parent = parentUI;
             }
+
             foreach (var item in uibases)
             {
                 try
@@ -670,6 +708,7 @@ namespace Async.UIFramework
                     Debug.LogException(ex);
                 }
             }
+
             if (GetLayer(uibase) == null)
             {
                 await DoRefresh(uibases);
@@ -916,6 +955,7 @@ namespace Async.UIFramework
                 item.Update();
                 if (item.IsCancel) timerRemoveSet.Add(item);
             }
+
             foreach (var item in timerRemoveSet)
             {
                 timers.Remove(item);
