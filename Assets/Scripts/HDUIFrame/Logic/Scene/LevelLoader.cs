@@ -17,9 +17,9 @@ public class LevelLoader : MonoSingleton<LevelLoader>
     SceneInstance _preScene;
 
     string _newLevel = string.Empty;
-    bool _actived;
     string _lastLevel = string.Empty;
-
+    bool _actived;
+    
     /// <summary>
     /// 场景在加载中
     /// </summary>
@@ -42,11 +42,11 @@ public class LevelLoader : MonoSingleton<LevelLoader>
     {
         if (InLoading)
         {
-            LogUtil.LogWarningFormat("{0} level is loading ,can not load new level!", _newLevel);
+            LogUtil.LogWarningFormat("{0} new scene is loading ,can not load new scene!", _newLevel);
             return;
         }
 
-        LevelStartLoadEvent?.Invoke();
+        LevelStartLoadEvent?.Invoke();    //todo
         _lastLevel = _newLevel;
         _newLevel = name_;
         _preScene = _loadScene;
@@ -66,7 +66,7 @@ public class LevelLoader : MonoSingleton<LevelLoader>
 
         if (handle_.Status != AsyncOperationStatus.Succeeded)
         {
-            LogUtil.LogErrorFormat("LoadLevel {0} failed", _newLevel);
+            LogUtil.LogErrorFormat("LoadNewScene {0} failed", _newLevel);
             _newLevel = string.Empty;
             return;
         }
@@ -77,8 +77,11 @@ public class LevelLoader : MonoSingleton<LevelLoader>
             _actived = true;
             CurLevel = _newLevel;
             _newLevel = string.Empty;
+
+            Debug.Log($"ddd -- LevelLoader OnLevelLoaded");
             if (!string.IsNullOrEmpty(_lastLevel))
             {
+                Debug.Log($"ddd -- LevelLoader OnLevelLoaded {_preScene.Scene.name}");
                 Addressables.UnloadSceneAsync(_preScene);
                 _lastLevel = string.Empty;
             }
@@ -101,14 +104,16 @@ public class LevelLoader : MonoSingleton<LevelLoader>
     public IEnumerator ActiveLevel()
     {
         yield return null;
+
         if (_actived)
         {
-            LogUtil.LogWarning("can not need activeLevel!");
+            LogUtil.LogWarning("can not need active Level!");
         }
         else
         {
             var handle = _loadScene.ActivateAsync();
             yield return handle;
+
             _actived = true;
             CurLevel = _newLevel;
             _newLevel = string.Empty;

@@ -38,7 +38,7 @@ public class GameInitialize : MonoSingleton<GameInitialize>
     public IEnumerator EnterGame()
     {
         yield return null;
-        LogUtil.Log("GameInitialize EnterGame finish !!!");
+        Debug.Log("ddd -- GameInitialize -- GameInitialize EnterGame Finish ...");
         LevelManager.Instance.StartLevel(Global.LOGIN_LEVEL_NAME);
     }
 }

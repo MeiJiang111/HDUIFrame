@@ -17,7 +17,7 @@ public struct AsyncPrefabs
 public class LevelManager : MonoSingleton<LevelManager>
 {
     /// <summary>
-    /// 开始加载新的场景回调
+    /// 开始加载新的场景前的回调
     /// </summary>
     public Action<string> StartLoadingNewLevelEvent;
     
@@ -43,6 +43,7 @@ public class LevelManager : MonoSingleton<LevelManager>
         get;
         private set;
     }
+
     public bool IsMainLevel => (CurLevel == Global.MAIN_LEVEL_NAME);
 
     bool _isStart;
@@ -72,19 +73,25 @@ public class LevelManager : MonoSingleton<LevelManager>
     protected override void Awake()
     {
         base.Awake();
-
-        levelLoader = LevelLoader.Instance;
+       
         levelAsyncPrefabs = new List<AsyncPrefabs>();
-
-        //levelLoader.LevelActivedEvent += OnLevelActived;
+        levelLoader = LevelLoader.Instance;
         levelLoader.LevelStartLoadEvent += OnLevelStartLoad;
-        //levelLoader.LevelLoadedEvent += OnLevelLoaded;
+        levelLoader.LevelLoadedEvent += OnLevelLoaded;
+        levelLoader.LevelActivedEvent += OnLevelActived; 
+    }
+
+    public void RegisterLoadPrefabs(List<AsyncPrefabInfo> prefabs, Action<string, GameObject, object> success, Action<string> faild = null)
+    {
+        foreach (var item in prefabs)
+        {
+            levelAsyncPrefabs.Add(new AsyncPrefabs() { name = item.Name, CreatSuccess = success, CreatFaild = faild});
+        }
     }
 
     public bool StartLevel(string name_, bool autoActive = true)
     {
-        Debug.Log($"ddd -- LevelManager Script -- StartLevel() == name_ == {name_}");
-
+        Debug.Log($"ddd -- LevelManager StartLevel --  (new scene name) == {name_}");
         if (levelLoader.InLoading)
         {
             LogUtil.LogWarningFormat("Call attempted to LoadLevel {0} while a level is already in the process of loading; ignoring the load request...", levelLoader.LoadingLevel);
@@ -100,20 +107,102 @@ public class LevelManager : MonoSingleton<LevelManager>
 
         StopAllCoroutines();
         StartCoroutine(StartLevelImple());
-        
         return true;
     }
 
     IEnumerator StartLevelImple()
     {
         yield return null;
-        StartLoadingNewLevelEvent?.Invoke(_newLevel);
+        StartLoadingNewLevelEvent?.Invoke(_newLevel);   //todo 
         yield return null;
         levelLoader.LoadLevelAsync(_newLevel, _autoActive);
     }
 
+    //-------------------------------- 场景开始加载前 --------------------------------
     private void OnLevelStartLoad()
     {
+        Debug.Log($"ddd -- LevelManager ready to start loading scene {_newLevel} 场景还未开始加载 ...");
+    }
 
+    //-------------------------------- 场景加载中回调 --------------------------------
+    private void OnLevelLoaded()
+    {
+        CurLevel = _newLevel;
+   
+        Debug.Log($"ddd -- LevelManager OnLevelLoaded -- levelLoader.AutoActive == {levelLoader.AutoActive} _autoActive == {_autoActive}");
+        if (!levelLoader.AutoActive && _autoActive)
+        {
+            Debug.Log("ddd -- 根本么进来 ...");
+            StartCoroutine(levelLoader.ActiveLevel());
+        }
+    }
+
+    //-------------------------------- 场景加载结束回调 --------------------------------
+    private void OnLevelActived()
+    {
+        Debug.Log($"ddd -- LevelManager OnLevelActived == count == {levelAsyncPrefabs.Count}");
+        foreach (var item in levelAsyncPrefabs)
+        {
+            ResourceManager.Instance.CreatInstanceAsync(item.name, CreatPrefabSuccess, CreatPrefabFaild);
+        }
+        _autoActive = false;
+        StartCoroutine(LevelStart());
+    }
+
+    void CreatPrefabSuccess(GameObject obj, object parmas = null)
+    {
+        asyncLoadedNum++;
+        string trueName = obj.name.Replace(Global.Clone_Str, "");
+        var _info = levelAsyncPrefabs.Find(new Predicate<AsyncPrefabs>((AsyncPrefabs) =>
+        {
+            if(AsyncPrefabs.name == trueName)
+            {
+                return true;
+            }
+            return true;
+        }));
+
+        if (string.IsNullOrEmpty(_info.name))
+        {
+            LogUtil.LogWarningFormat("Creat prefab {0} success but not exists!!!", trueName);
+            return;
+        }
+        _info.CreatSuccess?.Invoke(trueName, obj, parmas);
+    }
+
+    void CreatPrefabFaild(string name)
+    {
+        asyncLoadedNum++;
+        var _info = levelAsyncPrefabs.Find(new Predicate<AsyncPrefabs>((AsyncPrefabs) =>
+        {
+            if (AsyncPrefabs.name == name)
+            {
+                return true;
+            }
+            return false;
+        }));
+
+        if (string.IsNullOrEmpty(_info.name))
+        {
+            LogUtil.LogWarningFormat("Creat prefab {0} Faild but not exists!!!", name);
+            return;
+        }
+        _info.CreatFaild?.Invoke(name);
+    }
+
+    IEnumerator LevelStart()
+    {
+        yield return null;
+        _isStart = false;
+        LevelPreStartEvent?.Invoke();
+
+        while (LevelStartPaused)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForEndOfFrame();
+        _isStart = true;
+        LevelStartEvent?.Invoke();
     }
 }
