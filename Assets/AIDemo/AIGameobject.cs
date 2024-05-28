@@ -28,7 +28,7 @@ public class AIGameobject: MonoBehaviour
     void Update()
     {
         //PlayerMove();
-        ScreenPlayerMove();
+        //ScreenPlayerMove();
     }
 
     void PlayerMove()
@@ -54,27 +54,27 @@ public class AIGameobject: MonoBehaviour
         }
     }
 
-    async void ScreenPlayerMove()
-    {
-        if (Input.GetMouseButtonDown(0)) 
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+    //async void ScreenPlayerMove()
+    //{
+    //    if (Input.GetMouseButtonDown(0)) 
+    //    {
+    //        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //        RaycastHit hit;
 
-            if (Physics.Raycast(ray,out hit)) 
-            {
-                agent.isStopped = false;
-                agent.SetDestination(hit.point);
+    //        if (Physics.Raycast(ray,out hit)) 
+    //        {
+    //            agent.isStopped = false;
+    //            agent.SetDestination(hit.point);
 
-                EnemyMove();
-            }
-        }
+    //            EnemyMove();
+    //        }
+    //    }
 
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            agent.isStopped = true;
-        }
-    }
+    //    if (Input.GetKeyUp(KeyCode.Space))
+    //    {
+    //        agent.isStopped = true;
+    //    }
+    //}
 
     void EnemyMove()
     {
