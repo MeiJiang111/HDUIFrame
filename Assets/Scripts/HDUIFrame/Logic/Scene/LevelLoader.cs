@@ -27,9 +27,7 @@ public class LevelLoader : MonoSingleton<LevelLoader>
     public string CurLevel { get; private set; }
     public string LoadingLevel => _newLevel;
     public bool AutoActive { get; private set; }
-    public bool LevelActived => _actived;
    
-
     protected override void Awake()
     {
         base.Awake();
@@ -88,7 +86,7 @@ public class LevelLoader : MonoSingleton<LevelLoader>
         }
 
         LevelLoadedEvent?.Invoke();
-
+        
         if (AutoActive)
         {
             StartCoroutine(SendActiveLevelEvent());

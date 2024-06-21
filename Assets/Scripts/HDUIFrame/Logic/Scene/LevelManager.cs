@@ -51,9 +51,10 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     int asyncLoadedNum;
     List<AsyncPrefabs> levelAsyncPrefabs;
-    public float AsyncLoadingPct => asyncLoadedNum * 1f / levelAsyncPrefabs.Count;
+    //public float AsyncLoadingPct => asyncLoadedNum * 1f / levelAsyncPrefabs.Count;
 
     bool _autoActive;
+
     LevelLoader levelLoader;
   
     int _levelStartWaitCount = 0;
@@ -83,6 +84,7 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     public void RegisterLoadPrefabs(List<AsyncPrefabInfo> prefabs, Action<string, GameObject, object> success, Action<string> faild = null)
     {
+        Debug.Log("ddd -- RegisterLoadPrefabs  == " + prefabs.Count);
         foreach (var item in prefabs)
         {
             levelAsyncPrefabs.Add(new AsyncPrefabs() { name = item.Name, CreatSuccess = success, CreatFaild = faild});
@@ -91,7 +93,7 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     public bool StartLevel(string name_, bool autoActive = true)
     {
-        Debug.Log($"ddd -- LevelManager StartLevel --  (new scene name) == {name_}");
+        Debug.Log($"ddd -- LevelManager StartLevel  --  (new scene name) == {name_}");
         if (levelLoader.InLoading)
         {
             LogUtil.LogWarningFormat("Call attempted to LoadLevel {0} while a level is already in the process of loading; ignoring the load request...", levelLoader.LoadingLevel);
@@ -113,15 +115,15 @@ public class LevelManager : MonoSingleton<LevelManager>
     IEnumerator StartLevelImple()
     {
         yield return null;
+
         StartLoadingNewLevelEvent?.Invoke(_newLevel);   //todo 
-        yield return null;
         levelLoader.LoadLevelAsync(_newLevel, _autoActive);
     }
 
     //-------------------------------- 场景开始加载前 --------------------------------
     private void OnLevelStartLoad()
     {
-        Debug.Log($"ddd -- LevelManager ready to start loading scene {_newLevel} 场景还未开始加载 ...");
+        Debug.Log($"ddd -- LevelManager ready to start loading  {_newLevel} 场景还未开始加载 ...");
     }
 
     //-------------------------------- 场景加载中回调 --------------------------------
