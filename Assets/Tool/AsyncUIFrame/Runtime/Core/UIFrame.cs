@@ -80,8 +80,6 @@ namespace Async.UIFramework
         {
             base.Awake();
 
-            Debug.Log("ddd -- UIFrame - Awake");
-
             if (canvas == null)
             {
                 throw new Exception("UIFrame≥ı ºªØ ß∞‹£¨«Î…Ë÷√Canvas");
@@ -105,7 +103,6 @@ namespace Async.UIFramework
             layerTransform.offsetMin = Vector2.zero;
             layerTransform.offsetMax = Vector2.zero;
           
-            //DontDestroyOnLoad(gameObject);
             AutoBindUITimer.Enable();
             AutoBindUGUIButtonEvent.Enable();
         }
