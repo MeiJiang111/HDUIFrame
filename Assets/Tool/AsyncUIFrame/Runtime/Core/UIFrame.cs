@@ -80,6 +80,8 @@ namespace Async.UIFramework
         {
             base.Awake();
 
+            Debug.Log("ddd -- UIFrame - Awake");
+
             if (canvas == null)
             {
                 throw new Exception("UIFrame初始化失败，请设置Canvas");
@@ -102,9 +104,34 @@ namespace Async.UIFramework
             layerTransform.anchorMax = Vector2.one;
             layerTransform.offsetMin = Vector2.zero;
             layerTransform.offsetMax = Vector2.zero;
+          
             //DontDestroyOnLoad(gameObject);
             AutoBindUITimer.Enable();
             AutoBindUGUIButtonEvent.Enable();
+        }
+
+        private void Update()
+        {
+            foreach (var item in timers)
+            {
+                item.Update();
+
+                if (item.IsCancel)
+                {
+                    timerRemoveSet.Add(item);
+                }
+            }
+
+            foreach (var item in timerRemoveSet)
+            {
+                timers.Remove(item);
+            }
+        }
+
+        private void OnDestroy()
+        {
+            AutoBindUITimer.Disable();
+            AutoBindUGUIButtonEvent.Disable();
         }
 
 
@@ -246,6 +273,7 @@ namespace Async.UIFramework
                     DoUnbind(uibases);
                     DoHide(uibases);
                     instance.SetActive(false);
+
                     if (uibase.AutoDestroy || forceDestroy) 
                     {
                         ReleaseInstance(type);
@@ -574,13 +602,19 @@ namespace Async.UIFramework
                 TrySetData(instance.GetComponent<UIBase>(), data);
                 return instance;
             }
+
             GameObject refInstance = null;
             if (OnAssetRelease != null)
             {
                 refInstance = await OnAssetRequest.Invoke(type);
             }
+
             var uibase = refInstance.GetComponent<UIBase>();
-            if (uibase == null) throw new Exception("预制体没有挂载继承自UIBase的脚本");
+            if (uibase == null) 
+            {
+                throw new Exception("预制体没有挂载继承自UIBase的脚本");
+            } 
+
             var parent = GetOrCreateLayerTransform(type);
             instance = await UIFrame.Instantiate(refInstance, parent, data);
             instances[type] = instance;
@@ -1021,8 +1055,10 @@ namespace Async.UIFramework
                 result.offsetMin = Vector2.zero;
                 result.offsetMax = Vector2.zero;
                 result.localScale = Vector3.one;
+                result.localPosition = Vector3.zero;
                 uiLayers[layer] = result;
                 int index = 0;
+
                 foreach (var item in uiLayers.OrderBy(i => i.Key.GetOrder()))
                 {
                     item.Value.SetSiblingIndex(++index);
@@ -1031,28 +1067,6 @@ namespace Async.UIFramework
             return result;
         }
 
-        private void Update()
-        {
-            foreach (var item in timers)
-            {
-                item.Update();
-                if (item.IsCancel) 
-                {
-                    timerRemoveSet.Add(item);
-                }
-            }
-
-            foreach (var item in timerRemoveSet)
-            {
-                timers.Remove(item);
-            }
-        }
-
-        private void OnDestroy()
-        {
-            AutoBindUITimer.Disable();
-            AutoBindUGUIButtonEvent.Disable();
-        }
         #endregion
     }
 }

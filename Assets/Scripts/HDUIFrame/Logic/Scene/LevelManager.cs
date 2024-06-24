@@ -51,8 +51,7 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     int asyncLoadedNum;
     List<AsyncPrefabs> levelAsyncPrefabs;
-    //public float AsyncLoadingPct => asyncLoadedNum * 1f / levelAsyncPrefabs.Count;
-
+    
     bool _autoActive;
 
     LevelLoader levelLoader;
@@ -80,15 +79,6 @@ public class LevelManager : MonoSingleton<LevelManager>
         levelLoader.LevelStartLoadEvent += OnLevelStartLoad;
         levelLoader.LevelLoadedEvent += OnLevelLoaded;
         levelLoader.LevelActivedEvent += OnLevelActived; 
-    }
-
-    public void RegisterLoadPrefabs(List<AsyncPrefabInfo> prefabs, Action<string, GameObject, object> success, Action<string> faild = null)
-    {
-        Debug.Log("ddd -- RegisterLoadPrefabs  == " + prefabs.Count);
-        foreach (var item in prefabs)
-        {
-            levelAsyncPrefabs.Add(new AsyncPrefabs() { name = item.Name, CreatSuccess = success, CreatFaild = faild});
-        }
     }
 
     public bool StartLevel(string name_, bool autoActive = true)
@@ -142,7 +132,6 @@ public class LevelManager : MonoSingleton<LevelManager>
     //-------------------------------- 场景加载结束回调 --------------------------------
     private void OnLevelActived()
     {
-        Debug.Log($"ddd -- LevelManager OnLevelActived == count == {levelAsyncPrefabs.Count}");
         foreach (var item in levelAsyncPrefabs)
         {
             ResourceManager.Instance.CreatInstanceAsync(item.name, CreatPrefabSuccess, CreatPrefabFaild);
@@ -174,7 +163,6 @@ public class LevelManager : MonoSingleton<LevelManager>
 
     void CreatPrefabFaild(string name)
     {
-        asyncLoadedNum++;
         var _info = levelAsyncPrefabs.Find(new Predicate<AsyncPrefabs>((AsyncPrefabs) =>
         {
             if (AsyncPrefabs.name == name)
@@ -189,6 +177,7 @@ public class LevelManager : MonoSingleton<LevelManager>
             LogUtil.LogWarningFormat("Creat prefab {0} Faild but not exists!!!", name);
             return;
         }
+
         _info.CreatFaild?.Invoke(name);
     }
 
