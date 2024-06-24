@@ -16,8 +16,8 @@ public class LevelLoader : MonoSingleton<LevelLoader>
     SceneInstance _loadScene;
     SceneInstance _preScene;
 
-    string _newLevel = string.Empty;
     string _lastLevel = string.Empty;
+    string _newLevel = string.Empty;
     bool _actived;
     
     /// <summary>
@@ -76,7 +76,6 @@ public class LevelLoader : MonoSingleton<LevelLoader>
             CurLevel = _newLevel;
             _newLevel = string.Empty;
 
-            Debug.Log($"ddd -- LevelLoader OnLevelLoaded");
             if (!string.IsNullOrEmpty(_lastLevel))
             {
                 Debug.Log($"ddd -- LevelLoader OnLevelLoaded {_preScene.Scene.name}");

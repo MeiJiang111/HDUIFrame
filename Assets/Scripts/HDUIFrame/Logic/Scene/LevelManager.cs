@@ -37,19 +37,12 @@ public class LevelManager : MonoSingleton<LevelManager>
         private set;
     }
 
-    public bool IsMainLevel => (CurLevel == Global.MAIN_LEVEL_NAME);
-
     bool _isStart;
     public bool LevelIsStart => _isStart;
-
-    int asyncLoadedNum;
-   
     bool _autoActive;
 
     LevelLoader levelLoader;
   
-    int _levelStartWaitCount = 0;
-    
     protected override void Awake()
     {
         base.Awake();
@@ -60,49 +53,42 @@ public class LevelManager : MonoSingleton<LevelManager>
         levelLoader.LevelActivedEvent += OnLevelActived; 
     }
 
-    public bool StartLevel(string name_, bool autoActive = true)
+    public void StartLevel(string name_, bool autoActive = true)
     {
         Debug.Log($"ddd -- LevelManager StartLevel  --  (new scene name) == {name_}");
         if (levelLoader.InLoading)
         {
             LogUtil.LogWarningFormat("Call attempted to LoadLevel {0} while a level is already in the process of loading; ignoring the load request...", levelLoader.LoadingLevel);
-            return false;
+            return;
         }
 
         _isStart = false;
         _autoActive = autoActive;
         _newLevel = name_;
-        _levelStartWaitCount = 0;
-        asyncLoadedNum = 0;
-
+    
         StopAllCoroutines();
         StartCoroutine(StartLevelImple());
-        return true;
     }
 
     IEnumerator StartLevelImple()
     {
         yield return null;
-
-        StartLoadingNewLevelEvent?.Invoke(_newLevel);   //todo 
         levelLoader.LoadLevelAsync(_newLevel, _autoActive);
     }
 
     //-------------------------------- 场景开始加载前 --------------------------------
     private void OnLevelStartLoad()
     {
-        Debug.Log($"ddd -- LevelManager ready to start loading  {_newLevel} 场景还未开始加载 ...");
+        //Debug.Log($"ddd -- LevelManager ready to start loading  {_newLevel} 场景还未开始加载 ...");
     }
 
     //-------------------------------- 场景加载中回调 --------------------------------
     private void OnLevelLoaded()
     {
         CurLevel = _newLevel;
-   
-        Debug.Log($"ddd -- LevelManager OnLevelLoaded -- levelLoader.AutoActive == {levelLoader.AutoActive} _autoActive == {_autoActive}");
+  
         if (!levelLoader.AutoActive && _autoActive)
         {
-            Debug.Log("ddd -- 根本么进来 ...");
             StartCoroutine(levelLoader.ActiveLevel());
         }
     }
@@ -117,15 +103,6 @@ public class LevelManager : MonoSingleton<LevelManager>
     IEnumerator LevelStart()
     {
         yield return null;
-        _isStart = false;
-        LevelPreStartEvent?.Invoke();
-
-        //while (LevelStartPaused)
-        //{
-        //    yield return null;
-        //}
-
-        yield return new WaitForEndOfFrame();
         _isStart = true;
         LevelStartEvent?.Invoke();
     }

@@ -14,13 +14,11 @@ public class LevelInitializer : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("ddd -- LevelInitializer - Awake");
+
     }
 
     private void Start()
     {
-        Debug.Log("ddd -- LevelInitializer - Start");
-
         //注册资源请求释放事件
         UIFrame.OnAssetRequest += OnAssetRequest;
         UIFrame.OnAssetRelease += OnAssetRelease;
@@ -35,7 +33,6 @@ public class LevelInitializer : MonoBehaviour
 
     private async UniTask<GameObject> OnAssetRequest(Type type)
     {
-        Debug.Log("ddd -- LevelInitializer - OnAssetRequest");
         var layer = UIFrame.GetLayer(type);
         var handle = Addressables.LoadAssetAsync<GameObject>(type.Name).ToUniTask();
         return await handle;

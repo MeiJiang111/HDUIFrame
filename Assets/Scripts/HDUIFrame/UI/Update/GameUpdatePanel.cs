@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Xml.Linq;
 
 public class GameUpdatePanel : MonoBehaviour
 {
@@ -25,16 +26,25 @@ public class GameUpdatePanel : MonoBehaviour
         var update = GameUpdate.Instance;
         update.UpdateStateChangedEvent += OnUpdateStateChanged;
         update.DownLoadProcessChangeEvent += OnDownLoadProcessChanged;
+
+        var levelmgr = LevelManager.Instance;
+        levelmgr.LevelStartEvent += OnCloseThis;
     }
 
     private void OnDestroy()
     {
-        //var update = GameUpdate.Instance;
-        //if (update != null)
-        //{
-        //    update.UpdateStateChangedEvent -= OnUpdateStateChanged;
-        //    update.DownLoadProcessChangeEvent -= OnDownLoadProcessChanged;
-        //}
+        var mgr = LevelManager.Instance;
+        if (mgr != null)
+        {
+            mgr.LevelPreStartEvent -= OnCloseThis;
+        }
+
+        var update = GameUpdate.Instance;
+        if (update != null)
+        {
+            update.UpdateStateChangedEvent -= OnUpdateStateChanged;
+            update.DownLoadProcessChangeEvent -= OnDownLoadProcessChanged;
+        }
     }
 
     private void OnUpdateStateChanged(GameUpdate.UpdateState obj)
@@ -68,5 +78,10 @@ public class GameUpdatePanel : MonoBehaviour
     private void OnDownLoadProcessChanged(float obj)
     {
         SliderValue = obj;
+    }
+
+    private void OnCloseThis()
+    {
+        ResourceManager.Instance.DestroyInstance(this.gameObject);
     }
 }
