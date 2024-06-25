@@ -38,9 +38,7 @@ public class LevelManager : MonoSingleton<LevelManager>
     }
 
     bool _isStart;
-    public bool LevelIsStart => _isStart;
     bool _autoActive;
-
     LevelLoader levelLoader;
   
     protected override void Awake()

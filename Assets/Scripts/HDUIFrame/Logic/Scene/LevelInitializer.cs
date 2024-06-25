@@ -28,7 +28,11 @@ public class LevelInitializer : MonoBehaviour
         UIFrame.StuckTime = 0.5f;
         UIFrame.OnStuckStart += OnStuckStart;
         UIFrame.OnStuckEnd += OnStuckEnd;
-        UIFrame.Show<LoginPanel>();
+      
+        var data = new LoginData();
+        data.user = "dyc";
+        data.password = "123";
+        UIFrame.Show<LoginPanel>(data);
     }
 
     private async UniTask<GameObject> OnAssetRequest(Type type)

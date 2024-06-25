@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: dyc...
 --- !u!1 &466819592933119552
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 7818395012575623236}
   - component: {fileID: 1860185541381159054}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: input_user
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,6 +543,9 @@ MonoBehaviour:
   AutoDestroy: 1
   Parent: {fileID: 0}
   Children: []
+  inputUser: {fileID: 1860185541381159054}
+  inputPassword: {fileID: 5654278488344173640}
+  btnLogin: {fileID: 2332679190779004229}
 --- !u!1 &5760010776747495681
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +559,7 @@ GameObject:
   - component: {fileID: 5061521135812656314}
   - component: {fileID: 5654278488344173640}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: input_password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -959,7 +962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: 123...
 --- !u!1 &7056923826236021801
 GameObject:
   m_ObjectHideFlags: 0
