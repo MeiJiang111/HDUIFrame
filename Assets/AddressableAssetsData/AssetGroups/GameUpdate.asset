@@ -24,20 +24,6 @@ MonoBehaviour:
     - Prefabs_UI_Update
     - GameUpdate
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 41f6edbb1c98b4a4a9e4600dcb5767c0
-    m_Address: white
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Atlas_GameUpdate
-    - GameUpdate
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c417b9a7c4933664a9c4e2463b613ccb
-    m_Address: bg1
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Atlas_GameUpdate
-    - GameUpdate
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c427152164d2196479c4957b7fecfeb9, type: 2}
   m_SchemaSet:
