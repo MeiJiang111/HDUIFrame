@@ -6,12 +6,12 @@ public class GameInitialize : MonoSingleton<GameInitialize>
 {
     public bool ShowFrame;           //是否显示帧数        
     public int TargetFrame;          //限定帧数      
-    
-    [Header("开启更新")] 
+
+    [Header("开启更新")]
     public bool update;
-   
+
     public event Action GameInitEvent;
-   
+
     protected override void Awake()
     {
         base.Awake();
@@ -32,7 +32,7 @@ public class GameInitialize : MonoSingleton<GameInitialize>
 
     void Update()
     {
-        
+
     }
 
     public IEnumerator EnterGame()
