@@ -61,6 +61,7 @@ public class LoginPanel : UIComponent<LoginData>
         if(string.Equals(user, this.Data.user) && string.Equals(password, this.Data.password))
         {
             LogUtil.Log("ddd -- µÇÂ¼³É¹¦ ...");
+            UIFrame.Show<LoadingPanel>();
         }
         else
         {
